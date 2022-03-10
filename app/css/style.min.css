@@ -5,7 +5,7 @@ body {
   display: swap;
 }
 
-.spec__item-title, .company__item-title, .screen__subtitle, .title {
+.benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -77,7 +77,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   margin: 0 auto;
-  background-color: #002D42;
+  background-color: #00202e;
 }
 
 .wrapper {
@@ -116,7 +116,7 @@ body {
 }
 
 .section {
-  padding: 130px 0 70px;
+  padding: 70px 0 70px;
   position: relative;
 }
 .section::after {
@@ -570,6 +570,35 @@ body {
   color: #FFFFFF;
 }
 
+.benefits__title {
+  margin-bottom: 70px;
+}
+
+.benefits__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits__item {
+  width: 430px;
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+
+.benefits__subtitle {
+  color: #00E0FF;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 @media (max-width: 1920px) {
   .container__header {
     max-width: 1626px;
@@ -808,6 +837,16 @@ body {
   .global__social-list + .global__social-list {
     margin-left: 12px;
     margin-bottom: 30px;
+  }
+
+  .benefits__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .benefits__item {
+    margin-bottom: 50px;
   }
 }
 @media (max-height: 450px) {

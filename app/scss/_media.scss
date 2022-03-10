@@ -167,11 +167,6 @@
   }
 }
 
-
-
-
-
-
 @media(max-height: 700px) {
   .menu-mobil {
     margin-bottom: 20px;
@@ -238,10 +233,6 @@
     letter-spacing: 0;
   }
 
-  // .menu-mobil-services {
-  //   margin-left: 0;
-  // }
-
   .global__social-list--link {
     margin-bottom: 30px;
   }
@@ -256,11 +247,6 @@
     padding-top: 50px;
     overflow-y: scroll;
   }
-
-  // .menu-mobil {
-  //   margin-bottom: 20px;
-  // }
-
   .menu__mobil-list {
     margin-bottom: 25px;
   }
@@ -268,6 +254,14 @@
   .global__social-list+.global__social-list {
     margin-left: 12px;
     margin-bottom: 30px;
+  }
+  .benefits__subtitle{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .benefits__item{
+    margin-bottom: 50px;
   }
 }
 

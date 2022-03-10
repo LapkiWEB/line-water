@@ -8,7 +8,8 @@ body {
   // position: relative;
   // overflow-x: hidden;
   margin: 0 auto;
-  background-color: $dark-blue;
+  // background-color: $dark-blue;
+  background-color: rgba(0, 32, 46, 1);
 }
 
 .wrapper {
@@ -37,7 +38,7 @@ body {
   padding: 0 162px;
 }
 .section{
-  padding: 130px 0 70px; 
+  padding: 70px 0 70px; 
   position: relative;
   &::after{
     content: '';
@@ -59,8 +60,8 @@ body {
   margin-bottom: 50px;
   max-width: fit-content;
   letter-spacing: 3px;
-  
 }
+
 // ФОН ДЛЯ ITEM
 .global-bg {
   background-color: rgba(0, 32, 46, 0.7);

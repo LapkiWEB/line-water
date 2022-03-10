@@ -213,7 +213,34 @@
 
 // end section spec
 
+// start section benefits
+.benefits__title{
+  margin-bottom: 70px;
+}
+.benefits__inner{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.benefits__item{
+  width: 430px;
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+.benefits__subtitle{
+  @extend %Forum-Regular;
+  color: $neon-blue;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+
+
+
+// end section benefits
 
 
 
