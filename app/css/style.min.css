@@ -1,11 +1,11 @@
-.logo, .global__btn-contact, .global-btn, html,
+.spec__item-title span, .logo, .global__btn-contact, .global-btn, html,
 body {
   font-family: "Montserrat-Regular", sans-serif;
   font-weight: 400;
   display: swap;
 }
 
-.company__item-title, .screen__subtitle, .title {
+.spec__item-title, .company__item-title, .screen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -119,8 +119,8 @@ body {
   padding: 130px 0 70px;
   position: relative;
 }
-
-.global__section-line {
+.section::after {
+  content: "";
   width: 100%;
   height: 1px;
   position: absolute;
@@ -142,6 +142,16 @@ body {
   max-width: -moz-fit-content;
   max-width: fit-content;
   letter-spacing: 3px;
+}
+
+.global-bg {
+  background-color: rgba(0, 32, 46, 0.7);
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .global-btn {
@@ -463,6 +473,103 @@ body {
   text-align: left;
 }
 
+.spec {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.spec__title {
+  padding: 0 15px;
+}
+
+.spec__text {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 162px;
+  margin-bottom: 50px;
+}
+
+.spec__item-title {
+  font-size: 24px;
+  line-height: 26px;
+  text-align: left;
+  padding: 50px 15px 0 50px;
+  -webkit-transition-duration: 1s, 1s;
+       -o-transition-duration: 1s, 1s;
+          transition-duration: 1s, 1s;
+  text-transform: uppercase;
+  max-width: 320px;
+  width: 100%;
+}
+.spec__item-title span {
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  color: #FFFFFF;
+  display: none;
+}
+
+.spec__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.spec__wrapper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.spec__item {
+  max-width: 480px;
+  width: 100%;
+  height: 668px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition-duration: 3s, 1s;
+       -o-transition-duration: 3s, 1s;
+          transition-duration: 3s, 1s;
+  -webkit-transition: background-size 2s ease-in;
+  -o-transition: background-size 2s ease-in;
+  transition: background-size 2s ease-in;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+.spec__item:hover {
+  background-size: 110% 110%;
+}
+.spec__item:hover .global-bg {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00202E), color-stop(42.19%, rgba(0, 32, 46, 0)));
+  background: -o-linear-gradient(top, #00202E 0%, rgba(0, 32, 46, 0) 42.19%);
+  background: linear-gradient(180deg, #00202E 0%, rgba(0, 32, 46, 0) 42.19%);
+  border: 2px solid #00E0FF;
+}
+.spec__item:hover .spec__item-title {
+  color: #00E0FF;
+  font-size: 32px;
+  line-height: 38px;
+}
+.spec__item:hover .spec__item-title span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1920px) {
   .container__header {
     max-width: 1626px;
@@ -473,6 +580,23 @@ body {
 @media (max-width: 1600px) {
   .menu.active {
     width: 735px;
+  }
+}
+@media (max-width: 1450px) {
+  .spec__text {
+    padding: 0 30px;
+  }
+
+  .spec__item {
+    height: 500px;
+  }
+  .spec__item:hover .spec__item-title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .spec__item-title {
+    padding: 30px 15px 0 30px;
   }
 }
 @media (max-width: 1024px) {
@@ -531,6 +655,24 @@ body {
     max-width: 224px;
     margin-bottom: 50px;
   }
+
+  .spec__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .spec__item {
+    max-width: 512px;
+  }
+
+  .spec__item {
+    height: 600px;
+  }
+  .spec__item:hover .spec__item-title {
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 375px;
+  }
 }
 @media (max-height: 900px) {
   .menu.active {
@@ -564,6 +706,21 @@ body {
   .company__item {
     max-width: 100%;
   }
+
+  .spec__item {
+    max-width: 384px;
+    height: 480px;
+  }
+  .spec__item:hover .spec__item-title {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 320px;
+  }
+
+  .spec__item-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 @media (max-height: 700px) {
   .menu-mobil {
@@ -591,6 +748,23 @@ body {
     width: 100%;
     padding-top: 95px;
     padding-left: 15px;
+  }
+
+  .spec__wrapper-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .spec__item {
+    max-width: 100%;
+    height: 210px;
+    background-size: auto;
+    background-size: cover !important;
+  }
+  .spec__item:hover .global-bg {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #00202E), to(rgba(0, 32, 46, 0)));
+    background: -o-linear-gradient(top, #00202E 10%, rgba(0, 32, 46, 0) 100%);
+    background: linear-gradient(180deg, #00202E 10%, rgba(0, 32, 46, 0) 100%);
   }
 }
 @media (max-width: 500px) {

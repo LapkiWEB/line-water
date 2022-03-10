@@ -39,17 +39,17 @@ body {
 .section{
   padding: 130px 0 70px; 
   position: relative;
+  &::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 45, 66, 0) 0%, #03547A 32.81%, rgba(241, 252, 255, 0.77) 48.96%, #024B6D 65.1%, rgba(0, 45, 66, 0) 100%);
+  }
 }
-.global__section-line {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(90deg, rgba(0, 45, 66, 0) 0%, #03547A 32.81%, rgba(241, 252, 255, 0.77) 48.96%, #024B6D 65.1%, rgba(0, 45, 66, 0) 100%);
-}
-
 .title {
   @extend %Forum-Regular;
   font-size: 36px;
@@ -59,8 +59,17 @@ body {
   margin-bottom: 50px;
   max-width: fit-content;
   letter-spacing: 3px;
+  
 }
-
+// ФОН ДЛЯ ITEM
+.global-bg {
+  background-color: rgba(0, 32, 46, 0.7);
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+   transition-duration: 2s;
+}
+// ФОН ДЛЯ ITEM
 // ДЛЯ КНОПОК
 .global-btn {
   @extend %Mont-Regular;

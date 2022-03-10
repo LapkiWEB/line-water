@@ -12,6 +12,27 @@
   }
 }
 
+@media(max-width: 1450px) {
+  .spec__text {
+    padding: 0 30px;
+  }
+
+  .spec__item {
+    height: 500px;
+
+    &:hover {
+      .spec__item-title {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .spec__item-title {
+    padding: 30px 15px 0 30px
+  }
+}
+
 @media(max-width: 1024px) {
   .title {
     font-size: 24px;
@@ -70,6 +91,27 @@
     max-width: 224px;
     margin-bottom: 50px;
   }
+
+  .spec__inner {
+    flex-wrap: wrap;
+  }
+
+  .spec__item {
+    max-width: 512px;
+  }
+
+  .spec__item {
+    height: 600px;
+
+    &:hover {
+      .spec__item-title {
+        font-size: 32px;
+        line-height: 38px;
+        max-width: 375px;
+      }
+    }
+  }
+
 }
 
 @media(max-height: 900px) {
@@ -107,12 +149,28 @@
     max-width: 100%;
   }
 
+  .spec__item {
+    max-width: 384px;
+    height: 480px;
+    &:hover {
+      .spec__item-title {
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 320px;
+      }
+    }
+  }
 
-
-
-
-
+  .spec__item-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
+
+
+
+
+
 
 @media(max-height: 700px) {
   .menu-mobil {
@@ -141,6 +199,20 @@
     width: 100%;
     padding-top: 95px;
     padding-left: 15px;
+  }
+  .spec__wrapper-item{
+    flex-wrap: wrap;
+  }
+  .spec__item{
+    max-width: 100%;
+    height: 210px;
+     background-size: auto;
+     background-size: cover !important;
+     &:hover{
+       .global-bg {
+         background: linear-gradient(180deg, #00202E 10%, rgba(0, 32, 46, 0) 100%);
+       }
+     }
   }
 }
 
