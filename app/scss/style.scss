@@ -58,7 +58,6 @@
 }
 
 .screen__bg {
-  // margin-top: 104px;
   background-color: rgba(0, 32, 46, 0.7);
   position: absolute;
   z-index: 1;
@@ -68,7 +67,6 @@
 
 .screen__box {
   width: fit-content;
-  // margin-left: 70px;
   margin-top: 195px;
 }
 
@@ -88,8 +86,59 @@
   letter-spacing: 5px;
 }
 
-
-
-
 // end section screen
+
+
+// start section company
+.company__inner{
+  display: flex;
+  justify-content: space-around
+}
+.company__item{
+  max-width: 295px;
+  width: 100%;
+  // width: 310px;
+  // padding: 0 15px;
+  margin-bottom: 70px;
+}
+.company__item-title{
+  @extend %Forum-Regular;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  span{
+    color: $neon-blue;
+    font-size: 72px;
+    line-height: 50px;
+  }
+}
+.company__item-text{
+  text-align: left;
+}
+
+
+
+
+// end section company
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import 'media';
