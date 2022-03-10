@@ -1,40 +1,233 @@
 html,
 body {
-    height: 100%;
-        //   @extend %AnPro-Regular;
-        //   color: $text;
-        // position: relative;
-        // overflow-x: hidden;
-        // margin: 0 auto;
-        //   background-color: $background;
+  height: 100%;
+  @extend %Mont-Regular;
+  color: $blue;
+  font-size: 18px;
+  line-height: 22px;
+  // position: relative;
+  // overflow-x: hidden;
+  margin: 0 auto;
+  background-color: $dark-blue;
 }
+
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-.container{
-  // max-width: 1200px;
+
+.container {
+  max-width: 1626px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-// .title{
-//     @extend %AlGrey-Bold;
-//     font-size: 36px;
-//     line-height: 49px;
-//     padding: 0px 35px;
-//     border-bottom: 2px solid $blue;
-//     text-align: center;
-//     margin: 0 auto;
-//     margin-bottom: 56px;
-//     max-width: fit-content;
-// }
+.container__header {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 162px;
+}
+
+.title {
+  @extend %Forum-Regular;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: fit-content;
+}
+
+.logo {
+  font-size: 20px;
+  line-height: 20px;
+  @extend %Mont-Regular;
+  color: $white;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__img {
+    width: 47px;
+    height: 41px;
+  }
+}
+
+.logo__company-name {
+  span {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+
+
+.global-btn {
+  @extend %Mont-Regular;
+  padding: 8px;
+  background-color: $dark-blue;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px 0px 10px 0px;
+  width: fit-content;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  box-shadow: -1px -1px 5px 0px rgba(255, 255, 255, 0.5),
+    1px 1px 5px 0px rgba(0, 0, 0, 0.7),
+    5px 5px 10px 0px rgba(0, 0, 0, 0.3) inset,
+    -5px -5px 10px 0px rgba(255, 255, 255, 0.2) inset;
+  transition: all .3s;
+  &:hover {
+    border: 1px solid $neon-blue;
+    box-shadow: -1px -1px 15px 0px #00E0FF,
+      1px 1px 15px 0px #00E0FF,
+      5px 5px 10px 0px rgba(0, 0, 0, 0.3) inset,
+      -5px -5px 10px 0px rgba(255, 255, 255, 0.2) inset;
+    color: $neon-blue;
+    svg {
+      path {
+        stroke: $neon-blue;
+      }
+
+      g {
+        stroke: $neon-blue;
+      }
+
+      rect {
+        stroke: $neon-blue;
+      }
+
+      circle {
+        stroke: $neon-blue;
+      }
+    }
+
+  }
+
+}
+
+.main-btn {
+  border: 1px solid $neon-blue;
+}
+
+.global__btn-contact {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 8px 20px;
+  @extend %Mont-Regular;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.global__social-list {
+  display: inline-block;
+
+  &+.global__social-list {
+    margin-left: 30px;
+  }
+}
+
+.global__social-list--link {
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.menu__btn {
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+
+  &.active {
+    .row1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 6px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -3px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row3 {
+      display: none;
+    }
+  }
+}
+
+.row {
+  background-color: $white;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.row3 {
+  width: 20px;
+  margin-left: auto;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+
+  &.active {
+    display: block;
+    position: absolute;
+    // top: 104px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    // width: 690px;
+    width: 880px;
+    // height: 947px;
+    height: 100vh;
+    padding-left: 50px;
+    padding-top: 132px;
+    font-size: 18px;
+    line-height: 22px;
+    background: rgba(1, 23, 32, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.menu-mobil {
+  margin-bottom: 50px;
+}
+
+.menu-mobil-services {
+  margin: 50px 0 50px 20px;
+}
+
+.menu__mobil-list {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.menu__mobil-list--link {
+  transition: all .2s;
+
+  &:hover {
+    color: $neon-blue;
+  }
+}
