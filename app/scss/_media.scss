@@ -13,7 +13,9 @@
 }
 
 @media(max-width: 1450px) {
-  .spec__text {
+
+  .spec__text,
+  .projects__text {
     padding: 0 30px;
   }
 
@@ -28,8 +30,17 @@
     }
   }
 
-  .spec__item-title {
+  .spec__item-title,
+  .projects__item-title {
     padding: 30px 15px 0 30px
+  }
+
+  .projects__text-more {
+    padding: 30px 30px 0 30px;
+  }
+
+  .projects__item {
+    height: 500px;
   }
 }
 
@@ -112,6 +123,14 @@
     }
   }
 
+  .projects__wrapper-item {
+    flex-wrap: wrap;
+  }
+
+  .projects__item {
+    max-width: 1024px;
+    height: 600px;
+  }
 }
 
 @media(max-height: 900px) {
@@ -152,6 +171,7 @@
   .spec__item {
     max-width: 384px;
     height: 480px;
+
     &:hover {
       .spec__item-title {
         font-size: 24px;
@@ -161,9 +181,20 @@
     }
   }
 
-  .spec__item-title {
+  .spec__item-title,
+  .projects__item-title {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .projects__item {
+    height: 488px;
+    &:hover {
+      .projects__item-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
   }
 }
 
@@ -195,19 +226,28 @@
     padding-top: 95px;
     padding-left: 15px;
   }
-  .spec__wrapper-item{
+
+  .spec__wrapper-item {
     flex-wrap: wrap;
   }
-  .spec__item{
+
+  .spec__item {
     max-width: 100%;
     height: 210px;
-     background-size: auto;
-     background-size: cover !important;
-     &:hover{
-       .global-bg {
-         background: linear-gradient(180deg, #00202E 10%, rgba(0, 32, 46, 0) 100%);
-       }
-     }
+    background-size: auto;
+    background-size: cover !important;
+
+    &:hover {
+      .global-bg {
+        background: linear-gradient(180deg, #00202E 10%, rgba(0, 32, 46, 0) 100%);
+      }
+    }
+  }
+  .projects__item{
+    height: 350px;
+  }
+  .projects__text-more{
+    display: none;
   }
 }
 
@@ -247,6 +287,7 @@
     padding-top: 50px;
     overflow-y: scroll;
   }
+
   .menu__mobil-list {
     margin-bottom: 25px;
   }
@@ -255,12 +296,14 @@
     margin-left: 12px;
     margin-bottom: 30px;
   }
-  .benefits__subtitle{
+
+  .benefits__subtitle {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 15px;
   }
-  .benefits__item{
+
+  .benefits__item {
     margin-bottom: 50px;
   }
 }
@@ -274,7 +317,8 @@
     height: 450px;
   }
 }
-
+@media(max-width: 450px) {
+}
 @media(max-width: 380px) {
   .screen__title {
     font-size: 28px;
