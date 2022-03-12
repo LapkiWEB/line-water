@@ -68,7 +68,7 @@ body {
   padding: 0 162px;
   margin-bottom: 50px;
 }
-// ФОН ДЛЯ ITEM
+// ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
 .global-bg {
   background-color: rgba(0, 32, 46, 0.7);
   width: 100%;
@@ -76,7 +76,25 @@ body {
   border: 2px solid transparent;
    transition-duration: 2s;
 }
-// ФОН ДЛЯ ITEM
+// ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
+// ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
+.global__item-bg {
+  position: relative;
+  border-radius: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(180deg, rgba(241, 252, 255, 0.3),
+        rgba(0, 45, 66, 1));
+    border-radius: 10px;
+    z-index: -1;
+  }
+}
+// ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
 // ДЛЯ КНОПОК
 .global-btn {
   @extend %Mont-Regular;

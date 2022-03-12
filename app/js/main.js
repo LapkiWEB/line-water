@@ -19,4 +19,9 @@ $(function () {
   }));
 
 
+ $('.reviews__slider__inner').slick();
+
+
 })
+
+ 
