@@ -3,11 +3,20 @@ $(function () {
     if (!$('.menu').hasClass('active')) {
       $('.menu').addClass('active');
       $('.menu__btn').addClass('active');
-      // $('html, body').css('overflow', 'hidden');
     } else {
       $('.menu').removeClass('active');
       $('.menu__btn').removeClass('active');
-      // $('html, body').css('overflow', 'hidden');
     }
   }));
+
+
+
+  $('.questions__item-title').on('click', (function () {
+
+    $('.questions__item').removeClass('questions__item--active');
+    $(this).parent().addClass('questions__item--active');
+
+  }));
+
+
 })

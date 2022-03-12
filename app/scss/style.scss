@@ -42,12 +42,8 @@
   margin-right: 30px;
 }
 
-
 // end header
-
-
 // start section screen
-
 .screen {
   background-image: url('../images/content/header-bg1.jpg');
   background-repeat: no-repeat;
@@ -87,8 +83,6 @@
 }
 
 // end section screen
-
-
 // start section company
 .company__inner {
   display: flex;
@@ -131,8 +125,6 @@
 .spec__title {
   padding: 0 15px;
 }
-
-
 
 .spec__item-title {
   font-size: 24px;
@@ -235,10 +227,11 @@
 
 // end section benefits
 // start section projects
-.projects{
+.projects {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 .projects__inner {
   display: flex;
   justify-content: space-between;
@@ -316,10 +309,107 @@
 }
 
 .projects__text-more {
-  // margin-left: 162px;
   padding: 30px 30px 0 162px;
   max-width: 793px;
   width: 100%;
+}
+
+// end section projects
+
+// start section questions
+
+.questions {
+  background-image: url('../images/content/questions-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.questions__inner {
+  max-width: 1274px;
+  margin: 0 auto;
+}
+
+.questions__item {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  color: $white;
+  background: rgba(0, 45, 66, 0.8);
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(180deg, rgba(241, 252, 255, 0.3),
+        rgba(0, 45, 66, 1));
+    border-radius: 10px;
+    z-index: -1;
+  }
+}
+
+.questions__item-title {
+  @extend %Forum-Regular;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  transition: all .3s;
+  padding: 20px 20px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $neon-blue;
+    .questions__item-title--img2 {
+      display: block;
+    }
+
+    .questions__item-title--img1 {
+      display: none;
+    }
+  }
+}
+
+.questions__item-text {
+  @extend %Mont-Regular;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 98px 20px 50px;
+  display: none;
+  // min-height: 150px;
+}
+
+.questions__item-link {
+  color: $neon-blue;
+  border-bottom: 1px solid transparent;
+  &:hover{
+  border-bottom: 1px solid $neon-blue;
+  }
+}
+
+.questions__item-title--img2 {
+  display: none;
+}
+
+.questions__item.questions__item--active {
+  .questions__item-text {
+    display: block;
+  }
+
+  .questions__item-title {
+    color: $neon-blue;
+  }
+
+  .questions__item-wrapper {
+    transform: rotate(180deg);
+  }
+
 }
 
 
@@ -329,9 +419,8 @@
 
 
 
-// end section projects
 
-
+// end section questions
 
 
 
