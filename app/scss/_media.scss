@@ -44,6 +44,29 @@
   }
 }
 
+@media(max-width: 1200px) {
+  .reviews__item-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .reviews__info {
+    padding-right: 0;
+  }
+
+  .reviews__info-name {
+    max-width: 100%;
+  }
+
+  .reviews__info__wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .reviews__img {
+    margin-left: 115px;
+  }
+}
+
 @media(max-width: 1024px) {
   .title {
     font-size: 24px;
@@ -131,11 +154,29 @@
     max-width: 1024px;
     height: 600px;
   }
-}
 
-@media(max-height: 900px) {
-  .menu.active {
-    padding-top: 50px;
+  .reviews__item-wrapper {
+    padding: 40px;
+  }
+
+  .reviews__info-img {
+    display: none !important;
+  }
+
+  .reviews__info-name {
+    margin-bottom: 20px;
+  }
+
+  .reviews__info__wrapper {
+    padding-left: 0;
+  }
+
+  .reviews__info-text {
+    margin-bottom: 30px;
+  }
+
+  .reviews__img {
+    margin-left: 0;
   }
 }
 
@@ -144,6 +185,12 @@
     padding-top: 50px;
   }
 }
+
+// @media(max-height: 900px) {
+//   .menu.active {
+//     padding-top: 50px;
+//   }
+// }
 
 @media(max-height: 800px) {
   .menu__mobil-list {
@@ -183,13 +230,20 @@
 
   .spec__item-title,
   .projects__item-title,
-  .questions__item-title--text {
+  .questions__item-title--text,
+  .reviews__info-name {
     font-size: 18px;
     line-height: 20px;
   }
 
+  .reviews__info-name--time {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .projects__item {
     height: 488px;
+
     &:hover {
       .projects__item-title {
         font-size: 24px;
@@ -197,14 +251,17 @@
       }
     }
   }
-  .questions__item{
+
+  .questions__item {
     margin-bottom: 30px;
   }
-  .questions__item-title{
+
+  .questions__item-title {
     padding-right: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
   }
+
   .questions__item-text {
     padding-left: 20px;
     padding-right: 20px;
@@ -256,11 +313,17 @@
       }
     }
   }
-  .projects__item{
+
+  .projects__item {
     height: 350px;
   }
-  .projects__text-more{
+
+  .projects__text-more {
     display: none;
+  }
+
+  .reviews__img {
+    height: 213px;
   }
 }
 
@@ -320,6 +383,12 @@
   .benefits__item {
     margin-bottom: 50px;
   }
+  .reviews__item-wrapper{
+    padding: 15px 20px;
+  }
+  .reviews__img{
+    display: none;
+  }
 }
 
 @media(max-height: 450px) {
@@ -331,8 +400,9 @@
     height: 450px;
   }
 }
-@media(max-width: 450px) {
-}
+
+
+
 @media(max-width: 380px) {
   .screen__title {
     font-size: 28px;
@@ -348,5 +418,10 @@
       margin-left: 0;
     }
   }
-
+  .reviews__slider{
+    padding: 5px 60px;
+  }
+  .reviews__item-wrapper{
+    padding: 15px 10px;
+  }
 }

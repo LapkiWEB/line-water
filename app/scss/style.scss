@@ -397,10 +397,17 @@
 }
 
 // end section questions
-
-.reviews__slider{
-padding: 5px 0;
+.reviews__wrapper {
+  position: relative;
+  max-width: 1397px;
+  width: 100%;
+  margin: 0 auto;
 }
+
+.reviews__slider {
+  padding: 5px 75px;
+}
+
 .reviews__item {
   background-repeat: no-repeat;
   background-position: center;
@@ -412,32 +419,15 @@ padding: 5px 0;
 }
 
 .reviews__item-wrapper {
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 45, 66, 0.7);
   backdrop-filter: blur(10px);
-  padding: 70px;
+  padding: 75px;
   display: flex;
   justify-content: space-between;
 }
-
-.reviews__info,
-.reviews__img {
-  // width: 50%;
-
-}
-
-.reviews__img {
-  img {
-    width: 577px;
-    height: 350px;
-  }
-}
-
 .reviews__info {
   padding-right: 50px;
 }
-
 .reviews__info-title {
   display: flex;
   justify-content: space-between;
@@ -459,17 +449,15 @@ padding: 5px 0;
   line-height: 26px;
   text-transform: uppercase;
 }
-
 .reviews__info-name--time {
   color: $white;
   font-size: 14px;
   line-height: 17px;
   @extend %Mont-Regular;
 }
-
 .reviews__info__wrapper {
   padding-left: 115px;
-
+  width: 467px;
 }
 
 .reviews__info-text {
@@ -480,7 +468,18 @@ padding: 5px 0;
   font-size: 18px;
   line-height: 22px;
   color: $neon-blue;
+  border-bottom: 1px solid transparent;
+  &:hover{
+    border-bottom: 1px solid $neon-blue;
+  }
 }
-
+.reviews__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 577px;
+  width: 100%;
+  height: 350px;
+}
 
 @import 'media';

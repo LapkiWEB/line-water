@@ -37,10 +37,12 @@ body {
   max-width: 100%;
   padding: 0 162px;
 }
-.section{
-  padding: 70px 0 70px; 
+
+.section {
+  padding: 70px 0 70px;
   position: relative;
-  &::after{
+
+  &::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -51,6 +53,7 @@ body {
     background: linear-gradient(90deg, rgba(0, 45, 66, 0) 0%, #03547A 32.81%, rgba(241, 252, 255, 0.77) 48.96%, #024B6D 65.1%, rgba(0, 45, 66, 0) 100%);
   }
 }
+
 .title {
   @extend %Forum-Regular;
   font-size: 36px;
@@ -62,25 +65,29 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 .subtitle {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 162px;
   margin-bottom: 50px;
 }
+
 // ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
 .global-bg {
   background-color: rgba(0, 32, 46, 0.7);
   width: 100%;
   height: 100%;
   border: 2px solid transparent;
-   transition-duration: 2s;
+  transition-duration: 2s;
 }
+
 // ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
 // ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
 .global__item-bg {
   position: relative;
   border-radius: 10px;
+
   &::before {
     content: '';
     position: absolute;
@@ -94,6 +101,7 @@ body {
     z-index: -1;
   }
 }
+
 // ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
 // ДЛЯ КНОПОК
 .global-btn {
@@ -141,9 +149,11 @@ body {
   }
 
 }
+
 .main-btn {
   border: 1px solid $neon-blue;
 }
+
 .global__btn-contact {
   font-size: 16px;
   line-height: 25px;
@@ -152,11 +162,13 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .global__inner-btn {
   display: flex;
   width: 100%;
   justify-content: center;
 }
+
 // ДЛЯ КНОПОК
 // ЛОГОТИП
 .logo {
@@ -168,6 +180,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__img {
     width: 47px;
     height: 41px;
@@ -180,6 +193,7 @@ body {
     line-height: 24px;
   }
 }
+
 // ЛОГОТИП
 // ВЫЕЗЖАЮЩЕЕ МЕНЮ
 .global__social-list {
@@ -284,8 +298,61 @@ body {
     color: $neon-blue;
   }
 }
+
 // ВЫЕЗЖАЮЩЕЕ МЕНЮ
 
 
 
 
+
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0px;
+}
+
+.slider__arrow-prev--hover {
+  display: none;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  // outline: none;
+  //  width: 55px;
+  //  height: 78px;
+  background-color: transparent;
+  transition: all .3s;
+  border: none;
+
+  &:hover {
+    .slider__arrow-prev--static {
+      display: none;
+    }
+
+    .slider__arrow-prev--hover {
+      display: block;
+    }
+  }
+
+
+  .arrow__wrapper {
+
+    // opacity: 1;
+    // display: flex;
+    // justify-content: center;
+    img {
+      width: 55px;
+      height: 78px;
+    }
+  }
+}

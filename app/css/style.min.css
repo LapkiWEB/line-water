@@ -471,6 +471,48 @@ body {
   color: #00E0FF;
 }
 
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0px;
+}
+
+.slider__arrow-prev--hover {
+  display: none;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+.slick-arrow:hover .slider__arrow-prev--static {
+  display: none;
+}
+.slick-arrow:hover .slider__arrow-prev--hover {
+  display: block;
+}
+.slick-arrow .arrow__wrapper img {
+  width: 55px;
+  height: 78px;
+}
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.eot");
@@ -889,8 +931,15 @@ body {
           transform: rotate(180deg);
 }
 
+.reviews__wrapper {
+  position: relative;
+  max-width: 1397px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .reviews__slider {
-  padding: 5px 0;
+  padding: 5px 75px;
 }
 
 .reviews__item {
@@ -905,23 +954,16 @@ body {
 }
 
 .reviews__item-wrapper {
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 45, 66, 0.7);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 70px;
+  padding: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.reviews__img img {
-  width: 577px;
-  height: 350px;
 }
 
 .reviews__info {
@@ -961,6 +1003,7 @@ body {
 
 .reviews__info__wrapper {
   padding-left: 115px;
+  width: 467px;
 }
 
 .reviews__info-text {
@@ -971,6 +1014,19 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #00E0FF;
+  border-bottom: 1px solid transparent;
+}
+.reviews__info-link:hover {
+  border-bottom: 1px solid #00E0FF;
+}
+
+.reviews__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 577px;
+  width: 100%;
+  height: 350px;
 }
 
 @media (max-width: 1920px) {
@@ -1010,6 +1066,29 @@ body {
 
   .projects__item {
     height: 500px;
+  }
+}
+@media (max-width: 1200px) {
+  .reviews__item-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .reviews__info {
+    padding-right: 0;
+  }
+
+  .reviews__info-name {
+    max-width: 100%;
+  }
+
+  .reviews__info__wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .reviews__img {
+    margin-left: 115px;
   }
 }
 @media (max-width: 1024px) {
@@ -1096,10 +1175,29 @@ body {
     max-width: 1024px;
     height: 600px;
   }
-}
-@media (max-height: 900px) {
-  .menu.active {
-    padding-top: 50px;
+
+  .reviews__item-wrapper {
+    padding: 40px;
+  }
+
+  .reviews__info-img {
+    display: none !important;
+  }
+
+  .reviews__info-name {
+    margin-bottom: 20px;
+  }
+
+  .reviews__info__wrapper {
+    padding-left: 0;
+  }
+
+  .reviews__info-text {
+    margin-bottom: 30px;
+  }
+
+  .reviews__img {
+    margin-left: 0;
   }
 }
 @media (max-height: 900px) {
@@ -1142,9 +1240,15 @@ body {
 
   .spec__item-title,
 .projects__item-title,
-.questions__item-title--text {
+.questions__item-title--text,
+.reviews__info-name {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .reviews__info-name--time {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .projects__item {
@@ -1222,6 +1326,10 @@ body {
   .projects__text-more {
     display: none;
   }
+
+  .reviews__img {
+    height: 213px;
+  }
 }
 @media (max-width: 500px) {
   .header__phone {
@@ -1275,6 +1383,14 @@ body {
   .benefits__item {
     margin-bottom: 50px;
   }
+
+  .reviews__item-wrapper {
+    padding: 15px 20px;
+  }
+
+  .reviews__img {
+    display: none;
+  }
 }
 @media (max-height: 450px) {
   .screen__box {
@@ -1298,5 +1414,13 @@ body {
   }
   .header__btn + .header__btn {
     margin-left: 0;
+  }
+
+  .reviews__slider {
+    padding: 5px 60px;
+  }
+
+  .reviews__item-wrapper {
+    padding: 15px 10px;
   }
 }

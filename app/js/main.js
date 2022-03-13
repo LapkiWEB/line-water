@@ -19,9 +19,11 @@ $(function () {
   }));
 
 
- $('.reviews__slider__inner').slick();
-
-
+  $('.reviews__slider__inner').slick({
+    prevArrow: document.querySelector('.slick-prev'),
+    nextArrow: document.querySelector('.slick-next'),
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 })
-
- 
