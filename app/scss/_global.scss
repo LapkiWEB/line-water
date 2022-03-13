@@ -9,7 +9,7 @@ body {
   // overflow-x: hidden;
   margin: 0 auto;
   background-color: $dark-blue;
-  // background-color: rgba(0, 32, 46, 1);
+  background-color: rgba(0, 32, 46, 1);
 }
 
 .wrapper {
@@ -81,7 +81,6 @@ body {
   border: 2px solid transparent;
   transition-duration: 2s;
 }
-
 // ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
 // ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
 .global__item-bg {
@@ -301,11 +300,7 @@ body {
 
 // ВЫЕЗЖАЮЩЕЕ МЕНЮ
 
-
-
-
-
-
+// КНОПКИ СЛАЙДЕР
 .slick-prev {
   position: absolute;
   top: 50%;
@@ -320,16 +315,11 @@ body {
   transform: translate(0, -50%);
   right: 0px;
 }
-
 .slider__arrow-prev--hover {
   display: none;
 }
-
 .slick-arrow {
   cursor: pointer;
-  // outline: none;
-  //  width: 55px;
-  //  height: 78px;
   background-color: transparent;
   transition: all .3s;
   border: none;
@@ -343,16 +333,38 @@ body {
       display: block;
     }
   }
-
-
   .arrow__wrapper {
-
-    // opacity: 1;
-    // display: flex;
-    // justify-content: center;
     img {
       width: 55px;
       height: 78px;
     }
   }
+}
+// КНОПКИ СЛАЙДЕР
+
+
+
+
+
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  button {
+    background-color: #F1FCFF;
+    border: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 20px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+
+.slick-dots li[class="slick-active"] button {
+  background-color: $neon-blue;
 }

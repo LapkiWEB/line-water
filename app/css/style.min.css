@@ -181,6 +181,7 @@ body {
   line-height: 22px;
   margin: 0 auto;
   background-color: #002D42;
+  background-color: #00202e;
 }
 
 .wrapper {
@@ -513,6 +514,32 @@ body {
   height: 78px;
 }
 
+.slick-dots {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+.slick-dots button {
+  background-color: #F1FCFF;
+  border: none;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 20px;
+  font-size: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.slick-dots li[class=slick-active] button {
+  background-color: #00E0FF;
+}
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.eot");
@@ -660,7 +687,7 @@ body {
   -webkit-transition-duration: 1s, 1s;
        -o-transition-duration: 1s, 1s;
           transition-duration: 1s, 1s;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   max-width: 350px;
   width: 100%;
@@ -958,6 +985,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 75px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,6 +1055,108 @@ body {
   max-width: 577px;
   width: 100%;
   height: 350px;
+  border-radius: 10px;
+}
+
+.feedback {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1134px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feedback__input__wrapper {
+  margin-bottom: 30px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 154px;
+}
+
+.feedback__item {
+  width: 100%;
+  background: rgba(0, 45, 66, 0.7) !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px 30px;
+  border: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+  overflow: none;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+  -webkit-text-fill-color: #fff;
+}
+.feedback__item::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__item::-moz-placeholder {
+  color: #FFFFFF;
+}
+.feedback__item:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__item::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.feedback__item::placeholder {
+  color: #FFFFFF;
+}
+
+.feedback__item-text {
+  width: 100%;
+  resize: none;
+  height: 154px;
+}
+
+.feedback__btn {
+  color: #FFFFFF;
+}
+
+.feedback__btn {
+  margin-left: 50px;
+}
+
+.feedback__file__wrapper {
+  position: relative;
+}
+
+.feedback__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 @media (max-width: 1920px) {
@@ -1089,6 +1219,25 @@ body {
 
   .reviews__img {
     margin-left: 115px;
+  }
+
+  .feedback__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .feedback__wrapper {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 1024px) {
@@ -1273,6 +1422,31 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .feedback__item::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .feedback__item::-moz-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .feedback__item:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .feedback__item::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .feedback__item::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 @media (max-height: 700px) {
   .menu-mobil {
@@ -1327,8 +1501,16 @@ body {
     display: none;
   }
 
-  .reviews__img {
-    height: 213px;
+  .feedback__input__wrapper {
+    width: 100%;
+  }
+
+  .feedback__item {
+    width: 100%;
+  }
+
+  .feedback__item-text {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -1391,6 +1573,35 @@ body {
   .reviews__img {
     display: none;
   }
+
+  .feedback__inners-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .feedback__file__wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .feedback__btn {
+    margin-left: 0;
+  }
+
+  .slick-next,
+.slick-prev {
+    display: none;
+  }
+
+  .reviews__slider {
+    padding: 2px 15px;
+  }
 }
 @media (max-height: 450px) {
   .screen__box {
@@ -1399,6 +1610,14 @@ body {
 
   .screen {
     height: 450px;
+  }
+}
+@media (max-width: 400px) {
+  .global__social-list {
+    margin-right: 30px;
+  }
+  .global__social-list + .global__social-list {
+    margin-left: 0px;
   }
 }
 @media (max-width: 380px) {
@@ -1414,13 +1633,5 @@ body {
   }
   .header__btn + .header__btn {
     margin-left: 0;
-  }
-
-  .reviews__slider {
-    padding: 5px 60px;
-  }
-
-  .reviews__item-wrapper {
-    padding: 15px 10px;
   }
 }

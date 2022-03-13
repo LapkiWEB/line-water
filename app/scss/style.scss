@@ -133,7 +133,7 @@
   padding: 50px 15px 0 50px;
   transition-duration: 1s,
     1s;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   max-width: 350px;
   width: 100%;
@@ -327,7 +327,6 @@
   max-width: 1274px;
   margin: 0 auto;
 }
-
 .questions__item {
   margin-bottom: 50px;
   color: $white;
@@ -397,6 +396,8 @@
 }
 
 // end section questions
+// start section reviews
+
 .reviews__wrapper {
   position: relative;
   max-width: 1397px;
@@ -422,12 +423,15 @@
   background-color: rgba(0, 45, 66, 0.7);
   backdrop-filter: blur(10px);
   padding: 75px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
 }
+
 .reviews__info {
   padding-right: 50px;
 }
+
 .reviews__info-title {
   display: flex;
   justify-content: space-between;
@@ -449,12 +453,14 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
 .reviews__info-name--time {
   color: $white;
   font-size: 14px;
   line-height: 17px;
   @extend %Mont-Regular;
 }
+
 .reviews__info__wrapper {
   padding-left: 115px;
   width: 467px;
@@ -469,10 +475,12 @@
   line-height: 22px;
   color: $neon-blue;
   border-bottom: 1px solid transparent;
-  &:hover{
+
+  &:hover {
     border-bottom: 1px solid $neon-blue;
   }
 }
+
 .reviews__img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -480,6 +488,121 @@
   max-width: 577px;
   width: 100%;
   height: 350px;
+  border-radius: 10px;
 }
+
+// end section reviews
+
+// start section feedback
+
+.feedback {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1134px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feedback__input__wrapper {
+  margin-bottom: 30px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 154px;
+
+}
+
+.feedback__item {
+  width: 100%;
+  background: rgba(0, 45, 66, 0.7) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px 30px;
+  border: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+  overflow: none;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+  -webkit-text-fill-color: #fff;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+
+.feedback__item-text {
+  width: 100%;
+  resize: none;
+  height: 154px;
+}
+
+.feedback__btn {
+  color: $white;
+}
+
+.feedback__btn {
+  margin-left: 50px;
+}
+
+// ПРИКРЕПИТЬ ФАЙЛЫ
+.feedback__file__wrapper {
+  position: relative;
+}
+
+.feedback__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+// ПРИКРЕПИТЬ ФАЙЛЫ
+
+
+// end section feedback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
