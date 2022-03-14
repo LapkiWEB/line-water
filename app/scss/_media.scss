@@ -44,6 +44,24 @@
   }
 }
 
+@media(max-width: 1300px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer__down-policy {
+    width: 415px;
+    text-align: left;
+  }
+
+  .footer__item-logo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+}
+
 @media(max-width: 1200px) {
   .reviews__item-wrapper {
     flex-wrap: wrap;
@@ -99,6 +117,12 @@
 
   .menu.active {
     width: 520px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer__menu-list--link,
+  .footer__menu-list {
     font-size: 14px;
     line-height: 17px;
   }
@@ -194,6 +218,37 @@
 
 }
 
+@media(max-width: 850px) {
+  .footer__inner {
+    justify-content: center;
+  }
+
+  .footer__item {
+    max-width: 470px;
+    width: 100%;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  .footer__item-logo {
+    max-width: 100%;
+  }
+
+  .footer__down {
+    flex-wrap: wrap;
+  }
+
+  .footer__down-policy {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 @media(max-height: 900px) {
   .menu.active {
@@ -351,7 +406,14 @@
     width: 100%;
   }
 
+  .global__social-list {
+    margin-right: 30px;
+    margin-bottom: 10px;
 
+    &+.global__social-list {
+      margin-left: 0px;
+    }
+  }
 
 }
 
@@ -397,11 +459,6 @@
     margin-bottom: 25px;
   }
 
-  .global__social-list+.global__social-list {
-    margin-left: 12px;
-    margin-bottom: 30px;
-  }
-
   .benefits__subtitle {
     font-size: 18px;
     line-height: 20px;
@@ -434,13 +491,18 @@
   .feedback__btn {
     margin-left: 0;
   }
-.slick-next,
-.slick-prev {
-  display: none;
-}
-.reviews__slider{
-  padding: 2px 15px;
-}
+
+  .slick-next,
+  .slick-prev {
+    display: none;
+  }
+
+  .reviews__slider {
+    padding: 2px 15px;
+  }
+    .footer__btn-wrapper {
+      display: block;
+    }
 
 }
 
@@ -453,16 +515,7 @@
     height: 450px;
   }
 
-}
 
-@media(max-width: 400px) {
-  .global__social-list {
-    margin-right: 30px;
-
-    &+.global__social-list {
-      margin-left: 0px;
-    }
-  }
 }
 
 @media(max-width: 380px) {
@@ -480,13 +533,4 @@
       margin-left: 0;
     }
   }
-
-  // .reviews__slider {
-  //   padding: 5px 60px;
-  // }
-
-  // .reviews__item-wrapper {
-  //   padding: 15px 10px;
-  // }
-
 }

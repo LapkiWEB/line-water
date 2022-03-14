@@ -1159,6 +1159,112 @@ body {
   width: 100%;
 }
 
+.footer {
+  padding: 70px 0 70px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item {
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.footer__item-logo {
+  width: 150px;
+  padding-left: 0;
+}
+
+.footer__item-nav {
+  width: 190px;
+}
+
+.footer__item-menu {
+  width: 440px;
+}
+
+.footer__item-contacts {
+  width: 470px;
+}
+
+.footer__menu-list {
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.footer__menu-list--link:hover {
+  color: #00E0FF;
+}
+
+.footer__menu-mobil {
+  margin: 30px 0;
+  margin-left: 20px;
+}
+
+.footer__menu-mobil__list {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.footer__social__wrapper {
+  margin-bottom: 50px;
+}
+
+.footer__btn {
+  margin-bottom: 30px;
+}
+
+.footer__city {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer__down {
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__down-copyright {
+  max-width: 415px;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.footer__down-policy {
+  max-width: 970px;
+  width: 100%;
+}
+
+.footer__down-text {
+  border-bottom: 1px solid transparent;
+  color: #00E0FF;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+.footer__down-text:hover {
+  border-bottom: 1px solid #00E0FF;
+}
+
 @media (max-width: 1920px) {
   .container__header {
     max-width: 1626px;
@@ -1196,6 +1302,24 @@ body {
 
   .projects__item {
     height: 500px;
+  }
+}
+@media (max-width: 1300px) {
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .footer__down-policy {
+    width: 415px;
+    text-align: left;
+  }
+
+  .footer__item-logo {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 1200px) {
@@ -1258,6 +1382,12 @@ body {
 
   .menu.active {
     width: 520px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer__menu-list--link,
+.footer__menu-list {
     font-size: 14px;
     line-height: 17px;
   }
@@ -1347,6 +1477,44 @@ body {
 
   .reviews__img {
     margin-left: 0;
+  }
+}
+@media (max-width: 850px) {
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__item {
+    max-width: 470px;
+    width: 100%;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  .footer__item-logo {
+    max-width: 100%;
+  }
+
+  .footer__down {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__down-policy {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-height: 900px) {
@@ -1512,6 +1680,14 @@ body {
   .feedback__item-text {
     width: 100%;
   }
+
+  .global__social-list {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .global__social-list + .global__social-list {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 500px) {
   .header__phone {
@@ -1549,11 +1725,6 @@ body {
 
   .menu__mobil-list {
     margin-bottom: 25px;
-  }
-
-  .global__social-list + .global__social-list {
-    margin-left: 12px;
-    margin-bottom: 30px;
   }
 
   .benefits__subtitle {
@@ -1602,6 +1773,10 @@ body {
   .reviews__slider {
     padding: 2px 15px;
   }
+
+  .footer__btn-wrapper {
+    display: block;
+  }
 }
 @media (max-height: 450px) {
   .screen__box {
@@ -1610,14 +1785,6 @@ body {
 
   .screen {
     height: 450px;
-  }
-}
-@media (max-width: 400px) {
-  .global__social-list {
-    margin-right: 30px;
-  }
-  .global__social-list + .global__social-list {
-    margin-left: 0px;
   }
 }
 @media (max-width: 380px) {

@@ -542,7 +542,6 @@
   transition: background-color 5000s ease-in-out 0s;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
   -webkit-text-fill-color: #fff;
-
   &::placeholder {
     color: $white;
   }
@@ -576,9 +575,102 @@
 }
 // ПРИКРЕПИТЬ ФАЙЛЫ
 
-
 // end section feedback
+// start section footer
 
+.footer{
+  padding: 70px 0 70px;
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item{
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+.footer__item-logo{
+  width: 150px;
+  padding-left: 0;
+}
+.footer__item-nav{
+  width: 190px;
+  
+}
+.footer__item-menu{
+  width: 440px;
+}
+.footer__item-contacts{
+  width: 470px;
+}
+.footer__menu-list{
+  margin-bottom: 30px;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+.footer__menu-list--link{
+ &:hover {
+   color: $neon-blue;
+ }
+}
+.footer__menu-mobil{
+  margin: 30px 0;
+  margin-left: 20px;
+}
+.footer__menu-mobil__list{
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.footer__social__wrapper{
+  margin-bottom: 50px;
+}
+.footer__btn{
+  margin-bottom: 30px;
+}
+.footer__city{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer__down {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__down-copyright {
+  max-width: 415px;
+  width: 100%;
+  padding-right: 50px;
+}
+.footer__down-policy{
+  max-width: 970px;
+  width: 100%;
+}
+.footer__down-text {
+  // padding-left: 261px;
+  border-bottom: 1px solid transparent;
+  color: $neon-blue;
+  transition: all .3s;
+  text-align: center;
+  &:hover{
+    border-bottom: 1px solid $neon-blue;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// end section footer
 
 
 
