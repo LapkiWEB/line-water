@@ -200,6 +200,23 @@
 }
 
 @media(max-width: 850px) {
+
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .menu {
+    &.active {
+      padding: 35px 0 35px 35px;
+    }
+  }
+
   .footer__inner {
     justify-content: center;
   }
@@ -231,6 +248,7 @@
   }
 }
 
+// ВЕРТИКАЛЬ ВНИЗ!!!
 @media(max-height: 900px) {
   .menu.active {
     padding-top: 50px;
@@ -243,12 +261,16 @@
   }
 
   .menu-mobil-services {
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px 15px;
   }
 }
 
+// ВЕРТИКАЛЬ ВВЕРХ!!!
 
 @media(max-width: 768px) {
+
+
+
   .text {
     font-size: 16px;
     line-height: 20px;
@@ -325,29 +347,54 @@
   }
 }
 
-@media(max-height: 700px) {
-  .menu-mobil {
-    margin-bottom: 20px;
-  }
 
+// ВЕРТИКАЛЬ ВНИЗ!!!
+@media(max-height: 750px) {
   .menu.active {
     width: 100%;
-    overflow-y: scroll;
+    padding: 50px;
   }
 
-  .menu__wrapper {
-    position: relative;
+  .menu__mobil-box {
+    width: 235px;
+  }
+
+  .menu__mobil-social--list {
     margin-bottom: 20px;
+  }
+
+  // .menu-mobil {
+  //   height: 100%;
+  // }
+
+  .menu__wrapper {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .menu__mobil-btn {
+    margin-left: auto;
+  }
+
+  .menu__mobil-box {
+    margin-left: 50px;
+    text-align: right;
   }
 
   .menu-mobil-services {
-    position: absolute;
-    right: 200px;
-    top: 0;
+    margin: 0;
+  }
+
+  .menu__mobil-list {
+    margin-bottom: 15px;
   }
 }
 
+// ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 600px) {
+
+
+
   .menu.active {
     width: 100%;
     padding-left: 15px;
@@ -401,6 +448,7 @@
 
 }
 
+
 @media(max-width: 500px) {
 
   .header__phone {
@@ -426,10 +474,6 @@
 
   .global__social-list--link {
     margin-bottom: 30px;
-  }
-
-  .menu__mobil-list {
-    margin-bottom: 25px;
   }
 
   .benefits__subtitle {
@@ -480,6 +524,7 @@
 
 }
 
+// ВЕРТИКАЛЬ ВНИЗ!!!
 @media(max-height: 450px) {
   .screen__box {
     margin-top: 110px;
@@ -489,9 +534,20 @@
     height: 450px;
   }
 
+  .menu.active {
+    padding: 15px;
+  }
 
+  .menu__mobil-btn {
+    margin-left: 32px;
+  }
+
+  .menu__mobil-box {
+    height: 285px;
+  }
 }
 
+// ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 380px) {
   .screen__title {
     font-size: 28px;
@@ -501,7 +557,6 @@
 
   .header__btn {
     display: block;
-    // margin-bottom: 35px;
 
     &+.header__btn {
       margin-left: 0;

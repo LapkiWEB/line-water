@@ -431,8 +431,7 @@ body {
   bottom: 0;
   width: 880px;
   height: 100vh;
-  padding-left: 50px;
-  padding-top: 43px;
+  padding: 50px 0 50px 50px;
   font-size: 18px;
   line-height: 22px;
   background: rgba(1, 23, 32, 0.7);
@@ -441,11 +440,32 @@ body {
 }
 
 .menu-mobil {
-  margin-bottom: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.menu__mobil-btn {
+  margin-bottom: 30px;
+}
+
+.menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.menu__mobil-box {
+  margin-bottom: 25px;
 }
 
 .menu-mobil-services {
-  margin: 50px 0 50px 20px;
+  margin: 50px 0 50px 15px;
 }
 
 .menu__mobil-list {
@@ -1474,6 +1494,20 @@ body {
   }
 }
 @media (max-width: 850px) {
+  html,
+body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .menu.active {
+    padding: 35px 0 35px 35px;
+  }
+
   .footer__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1522,7 +1556,7 @@ body {
   }
 
   .menu-mobil-services {
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px 15px;
   }
 }
 @media (max-width: 768px) {
@@ -1614,25 +1648,44 @@ body {
     line-height: 18px;
   }
 }
-@media (max-height: 700px) {
-  .menu-mobil {
-    margin-bottom: 20px;
-  }
-
+@media (max-height: 750px) {
   .menu.active {
     width: 100%;
-    overflow-y: scroll;
+    padding: 50px;
+  }
+
+  .menu__mobil-box {
+    width: 235px;
+  }
+
+  .menu__mobil-social--list {
+    margin-bottom: 20px;
   }
 
   .menu__wrapper {
-    position: relative;
-    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .menu__mobil-btn {
+    margin-left: auto;
+  }
+
+  .menu__mobil-box {
+    margin-left: 50px;
+    text-align: right;
   }
 
   .menu-mobil-services {
-    position: absolute;
-    right: 200px;
-    top: 0;
+    margin: 0;
+  }
+
+  .menu__mobil-list {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 600px) {
@@ -1711,10 +1764,6 @@ body {
     margin-bottom: 30px;
   }
 
-  .menu__mobil-list {
-    margin-bottom: 25px;
-  }
-
   .benefits__subtitle {
     font-size: 18px;
     line-height: 20px;
@@ -1773,6 +1822,18 @@ body {
 
   .screen {
     height: 450px;
+  }
+
+  .menu.active {
+    padding: 15px;
+  }
+
+  .menu__mobil-btn {
+    margin-left: 32px;
+  }
+
+  .menu__mobil-box {
+    height: 285px;
   }
 }
 @media (max-width: 380px) {
