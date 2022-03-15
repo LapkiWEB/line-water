@@ -10,15 +10,10 @@
 
 <body>
   <header class="header">
-    <div class="container__header">
+    <div class="container">
       <div class="header__line">
         <a class="logo" href=#>
           <img class="logo__img" src="images/logo/logo.png" alt="">
-          <div class="logo__company-name">
-            ЛИНИЯ
-            <br>
-            <span>ВОДЫ</span>
-          </div>
         </a>
         <div class="header__contacts">
           <a class="global__btn-contact global-btn header__phone" href="#">
@@ -217,7 +212,7 @@
               <a class="global__btn-contact global-btn header__btn" href="#">
                 +7 921 094 12 55
               </a>
-              <a class="global__btn-contact global-btn header__btn" href="#">
+              <a class="global-btn global__btn-mail header__btn" href="#">
                 INFO@LINWA.RU
               </a>
               <ul class="global__social ">
@@ -591,13 +586,16 @@
               <div class="global-bg">
                 <h3 class="projects__item-title">
                   КУПЕЛЬ НА ДАЧЕ
-                  <span class="projects__item-more">Подробнее...</span>
                 </h3>
-                <p class="projects__text-more text">
+         
+                <p class="projects__text-more projects-block text">
                   Уличная купель предназначенная для круглогодичного использования. Железобетонная конструкция чаши
                   встроена в открытую террасу возле дома. Откидывающаяся Лестница позволяет закрывать купель легкой
                   пластиковой крышкой что позволяет воде оставаться всегда кристально чистой.
                 </p>
+                       <p class="projects__more">
+                         Подробнее...
+                       </p>
               </div>
             </a>
 
@@ -607,7 +605,7 @@
                   МОЗАИЧНЫЙ БАССЕЙН С ДЖАКУЗИ
                   <span class="projects__item-more">Подробнее...</span>
                 </h3>
-                <p class="projects__text-more">
+                <p class="projects__text-more text">
                   Бассейн отделан белоснежной мозаикой и имеет «римский» вход, Конструкция чаши отлита по разработанному
                   проекту одновременно с бетонированием фундамента здания, Оборудование бассейна вместе с переливной
                   емкостью расположено в техническом этаже дома.
@@ -625,7 +623,7 @@
                   БАССЕЙН В ЗАГОРОДНОМ ДОМЕ
                   <span class="projects__item-more">Подробнее...</span>
                 </h3>
-                <p class="projects__text-more">
+                <p class="projects__text-more text">
                   Бассейн отделан пленкой ПВХ «под мозаику». Противоток с расходом в 120 м³ позволяет проводить
                   тренировки по плаванию в ограниченном пространстве бассейна.
                 </p>
@@ -637,7 +635,7 @@
                   Банный комплекс с бассейном в коттедже
                   <span class="projects__item-more">Подробнее...</span>
                 </h3>
-                <p class="projects__text-more">
+                <p class="projects__text-more text">
                   Бассейн имеет переменную глубину. Бетонная чаша бассейна отделана пленкой ПВХ, вокруг построена
                   деревянная терраса. Оборудование расположено в техническом помещении выше уровня воды.
                 </p>
@@ -656,14 +654,24 @@
       </section>
 
 
-      <section class="questions section">
+      <section class="questions section" style=" background-image: url('images/content/questions-bg.png');">
         <h2 class="questions__title title">
           ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
         </h2>
         <div class="questions__inner">
           <div class="container">
-            <div class="questions__item global__item-bg questions__item--active">
-              <div class="questions__item-title">
+
+
+
+
+
+    
+
+
+
+
+            <details class="questions__item global__item-bg" open>
+              <summary class="questions__item-title">
                 <p class="questions__item-title--text">
                   Какой бассейн выбрать?
                 </p>
@@ -671,7 +679,7 @@
                   <img src="images/icons/arrow__down.png" alt="" class="questions__item-title--img1">
                   <img src="images/icons/arrow__down-hover.png" alt="" class="questions__item-title--img2">
                 </div>
-              </div>
+              </summary>
 
               <p class="questions__item-text text">
                 Для того чтобы понять, какой бассейн подойдёт именно вам - предлагаем ознакомиться с различными типами
@@ -685,15 +693,13 @@
                 <br>
                 <br>
                 или
-
                 <a class="questions__item-link" href="#">оставить заявку на
                   бесплатную консультацию</a>
-
               </p>
-            </div>
+            </details>
 
-            <div class="questions__item global__item-bg">
-              <div class="questions__item-title">
+            <details class="questions__item global__item-bg">
+              <summary class="questions__item-title">
                 <p class="questions__item-title--text">
                   Какие гарантии вы даёте на вашу работу?
                 </p>
@@ -701,17 +707,17 @@
                   <img src="images/icons/arrow__down.png" alt="" class="questions__item-title--img1">
                   <img src="images/icons/arrow__down-hover.png" alt="" class="questions__item-title--img2">
                 </div>
-              </div>
+              </summary>
               <p class="questions__item-text text">
                 Мы даем гарантию на всю нашу работу 2 года,
                 <br>
                 <br>
                 +1 год при заключении сервисного договора.
               </p>
-            </div>
+            </details>
 
-            <div class="questions__item global__item-bg">
-              <div class="questions__item-title">
+            <details class="questions__item global__item-bg">
+              <summary class="questions__item-title">
                 <p class="questions__item-title--text">
                   Какие данные нужны для предварительного расчета бассейна?
                 </p>
@@ -719,7 +725,7 @@
                   <img src="images/icons/arrow__down.png" alt="" class="questions__item-title--img1">
                   <img src="images/icons/arrow__down-hover.png" alt="" class="questions__item-title--img2">
                 </div>
-              </div>
+              </summary>
               <p class="questions__item-text text">
                 Что бы сделать предварительный расчет нам потребуется:
                 <br>
@@ -728,10 +734,10 @@
                 предварительной консультации
 
               </p>
-            </div>
+            </details>
 
-            <div class="questions__item global__item-bg">
-              <div class="questions__item-title">
+            <details class="questions__item global__item-bg">
+              <summary class="questions__item-title">
                 <p class="questions__item-title--text">
                   Чем вы оборудуете бассейн?
                 </p>
@@ -739,17 +745,17 @@
                   <img src="images/icons/arrow__down.png" alt="" class="questions__item-title--img1">
                   <img src="images/icons/arrow__down-hover.png" alt="" class="questions__item-title--img2">
                 </div>
-              </div>
+              </summary>
               <p class="questions__item-text text">
                 Мы не являемся производителем и продавцами оборудования.
                 <br>
                 То есть не ограничиваемся «собственным»
                 ассортиментом и подберем для вас наилучший и оптимальный вариант
               </p>
-            </div>
+            </details>
 
-            <div class="questions__item global__item-bg">
-              <div class="questions__item-title">
+            <details class="questions__item global__item-bg">
+              <summary class="questions__item-title">
                 <p class="questions__item-title--text">
                   Нужен бассейн «под ключ»
                 </p>
@@ -757,12 +763,12 @@
                   <img src="images/icons/arrow__down.png" alt="" class="questions__item-title--img1">
                   <img src="images/icons/arrow__down-hover.png" alt="" class="questions__item-title--img2">
                 </div>
-              </div>
+              </summary>
               <p class="questions__item-text text">
                 Реализуем проект полного цикла — начиная от идеи и копки котлована, до проведения пусконаладочных работ
                 и сдачи Заказчику.
               </p>
-            </div>
+            </details>
           </div>
 
         </div>
@@ -826,19 +832,19 @@
                     <div class="reviews__info-title">
                       <img class="reviews__info-img" src="images/icons/man.png" alt="">
                       <div class="reviews__info-name">
-                        АНДРЕЙ НЕКРАСОВ
+                        АНДРЕЙ НЕКРАСОВ2
                         <div class="reviews__info-name--time">
-                          год назад
+                          год назад2
                         </div>
                       </div>
                     </div>
                     <div class="reviews__info__wrapper">
                       <p class="reviews__info-text text">
-                        Очень хорошая компания! Супер профессиональный подход, очень лояльны к клиенту. При общем
+                        2Очень хорошая компания! Супер профессиональный подход, очень лояльны к клиенту. При общем
                         высоком
                         бюджете, смогли найти супер оптимальное решение, которое нас полностью устроило. Сроки все
                         выдержаны
-                        полностью. Рекомендую!
+                        полностью. Рекомендую!2
                       </p>
                       <a class="reviews__info-link text" href=#>
                         Больше отзывов на Яндекс...
@@ -924,11 +930,6 @@
           <div class="footer__item footer__item-logo">
             <a class="logo" href=#>
               <img class="logo__img" src="images/logo/logo.png" alt="">
-              <div class="logo__company-name">
-                ЛИНИЯ
-                <br>
-                <span>ВОДЫ</span>
-              </div>
             </a>
           </div>
 
@@ -1152,7 +1153,7 @@
               <a class="footer__btn global-btn global__btn-contact" href=#>
                 +7 921 094 12 55
               </a>
-              <a class="footer__btn global-btn global__btn-contact" href=#>
+              <a class="footer__btn global-btn global__btn-mail" href=#>
                 INFO@LINWA.RU
               </a>
             </div>

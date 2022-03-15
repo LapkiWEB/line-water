@@ -12,6 +12,17 @@
   width: 100%;
   z-index: 10;
   background-color: rgba(0, 32, 46, 0.9);
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 45, 66, 0) 0%, #03547A 32.81%, rgba(241, 252, 255, 0.77) 48.96%, #024B6D 65.1%, rgba(0, 45, 66, 0) 100%);
+  }
 }
 
 .header__line {
@@ -26,20 +37,20 @@
 }
 
 .header__social {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header__btn {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   &+.header__btn {
-    margin-left: 44px;
+    margin-left: 30px;
   }
 }
 
 .header__phone {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 // end header
@@ -78,7 +89,7 @@
   font-size: 48px;
   line-height: 53px;
   @extend %Forum-Regular;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 // end section screen
@@ -130,13 +141,11 @@
   line-height: 26px;
   @extend %Forum-Regular;
   text-align: left;
-  padding: 50px 15px 0 50px;
-  transition-duration: 1s,
-    1s;
-  letter-spacing: 1px;
+  margin: 50px 0 0 50px;
+  padding-right: 15px;
+  transition-duration: 1s, 1s;
   text-transform: uppercase;
-  max-width: 350px;
-  width: 100%;
+  max-width: 380px;
 
   span {
     display: none;
@@ -181,8 +190,8 @@
 
     .spec__item-title {
       color: $neon-blue;
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 28px;
+      line-height: 30px;
 
       span {
         display: block;
@@ -252,8 +261,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  transition-duration: 3s,
-    1s;
+  transition-duration: 3s, 1s;
   transition: background-size 2s ease-in;
   overflow: hidden;
   background-size: 100% 100%;
@@ -269,8 +277,9 @@
 
     .projects__item-title {
       color: $neon-blue;
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 30px;
 
       span {
         display: block;
@@ -280,8 +289,21 @@
       }
     }
 
+    .projects__more {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      // color: $white;
+      color: $neon-blue;
+      text-transform: uppercase;
+    }
+
     .projects__text-more {
       display: none;
+    }
+
+    .projects-block {
+      display: block;
     }
   }
 }
@@ -291,25 +313,29 @@
   line-height: 26px;
   @extend %Forum-Regular;
   text-align: left;
-  letter-spacing: 2px;
-  padding: 50px 15px 0px 162px;
-  transition-duration: 1s,
-    1s;
+  margin: 50px 0 30px 162px;
+  padding-right: 15px;
+  transition-duration: 1s, 1s;
   text-transform: uppercase;
-  max-width: 712px;
-  width: 100%;
+  max-width: 727px;
 
-  span {
-    display: none;
-    @extend %Mont-Regular;
+  // span {
+  //   display: none;
+  //   @extend %Mont-Regular;
+  // }
+}
 
-  }
+.projects__more {
+  margin-left: 162px;
+  display: none;
+  @extend %Mont-Regular;
 }
 
 .projects__text-more {
-  padding: 30px 30px 0 162px;
-  max-width: 793px;
-  width: 100%;
+  margin-left: 162px;
+  padding-right: 15px;
+  max-width: 651px;
+  margin-bottom: 20px;
 }
 
 // end section projects
@@ -317,7 +343,6 @@
 // start section questions
 
 .questions {
-  background-image: url('../images/content/questions-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -327,6 +352,7 @@
   max-width: 1274px;
   margin: 0 auto;
 }
+
 .questions__item {
   margin-bottom: 50px;
   color: $white;
@@ -364,7 +390,7 @@
   font-size: 18px;
   line-height: 22px;
   padding: 0 98px 20px 50px;
-  display: none;
+  // display: none;
 }
 
 .questions__item-link {
@@ -380,20 +406,35 @@
   display: none;
 }
 
-.questions__item.questions__item--active {
-  .questions__item-text {
-    display: block;
-  }
 
-  .questions__item-title {
-    color: $neon-blue;
-  }
-
+.questions__item[open] {
   .questions__item-wrapper {
     transform: rotate(180deg);
   }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // end section questions
 // start section reviews
@@ -542,6 +583,7 @@
   transition: background-color 5000s ease-in-out 0s;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
   -webkit-text-fill-color: #fff;
+
   &::placeholder {
     color: $white;
   }
@@ -573,88 +615,106 @@
   position: absolute;
   width: 100%;
 }
+
 // ПРИКРЕПИТЬ ФАЙЛЫ
 
 // end section feedback
 // start section footer
 
-.footer{
+.footer {
   padding: 70px 0 70px;
 }
-.footer__inner{
+
+.footer__inner {
   display: flex;
   justify-content: space-between;
 }
-.footer__item{
+
+.footer__item {
   margin-bottom: 50px;
   padding: 0 15px;
 }
-.footer__item-logo{
+
+.footer__item-logo {
   width: 150px;
   padding-left: 0;
 }
-.footer__item-nav{
+
+.footer__item-nav {
   width: 190px;
-  
+
 }
-.footer__item-menu{
+
+.footer__item-menu {
   width: 440px;
 }
-.footer__item-contacts{
+
+.footer__item-contacts {
   width: 470px;
 }
-.footer__menu-list{
+
+.footer__menu-list {
   margin-bottom: 30px;
   transition: all .3s;
   text-transform: uppercase;
 }
-.footer__menu-list--link{
- &:hover {
-   color: $neon-blue;
- }
+
+.footer__menu-list--link {
+  &:hover {
+    color: $neon-blue;
+  }
 }
-.footer__menu-mobil{
+
+.footer__menu-mobil {
   margin: 30px 0;
   margin-left: 20px;
 }
-.footer__menu-mobil__list{
+
+.footer__menu-mobil__list {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
 }
-.footer__social__wrapper{
+
+.footer__social__wrapper {
   margin-bottom: 50px;
 }
-.footer__btn{
+
+.footer__btn {
   margin-bottom: 30px;
 }
-.footer__city{
+
+.footer__city {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .footer__down {
   font-size: 14px;
   line-height: 17px;
   display: flex;
   justify-content: space-between;
 }
+
 .footer__down-copyright {
   max-width: 415px;
   width: 100%;
   padding-right: 50px;
 }
-.footer__down-policy{
+
+.footer__down-policy {
   max-width: 970px;
   width: 100%;
 }
+
 .footer__down-text {
-  // padding-left: 261px;
   border-bottom: 1px solid transparent;
   color: $neon-blue;
   transition: all .3s;
   text-align: center;
-  &:hover{
+
+  &:hover {
     border-bottom: 1px solid $neon-blue;
   }
 }

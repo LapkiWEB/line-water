@@ -8,8 +8,7 @@ body {
   // position: relative;
   // overflow-x: hidden;
   margin: 0 auto;
-  background-color: $dark-blue;
-  background-color: rgba(0, 32, 46, 1);
+  background-color: $black;
 }
 
 .wrapper {
@@ -32,11 +31,6 @@ body {
   padding: 0 15px;
 }
 
-.container__header {
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 0 162px;
-}
 
 .section {
   padding: 70px 0 70px;
@@ -81,6 +75,7 @@ body {
   border: 2px solid transparent;
   transition-duration: 2s;
 }
+
 // ФОН ДЛЯ ЗАТЕМНЕНИЕ БОЛЬШИЕ КАРТИНКИ
 // ФОН ПОДЛОЖКА КАК ВОПРОС ОТВЕТ
 .global__item-bg {
@@ -162,6 +157,17 @@ body {
   cursor: pointer;
 }
 
+
+.global__btn-mail {
+  padding: 8px 11px;
+  font-size: 16px;
+  line-height: 25px;
+  @extend %Mont-Regular;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
 .global__inner-btn {
   display: flex;
   width: 100%;
@@ -171,25 +177,9 @@ body {
 // ДЛЯ КНОПОК
 // ЛОГОТИП
 .logo {
-  font-size: 20px;
-  line-height: 20px;
-  @extend %Mont-Regular;
-  color: $white;
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   &__img {
-    width: 47px;
-    height: 41px;
-  }
-}
-
-.logo__company-name {
-  span {
-    font-size: 24px;
-    line-height: 24px;
+    width: 136px;
+    height: 52px;
   }
 }
 
@@ -215,6 +205,12 @@ body {
   cursor: pointer;
   z-index: 100;
 
+  &:hover {
+    .row {
+      background-color: $neon-blue;
+    }
+  }
+
   &.active {
     .row1 {
       transform: rotate(45deg);
@@ -235,6 +231,12 @@ body {
     .row3 {
       display: none;
     }
+
+    &:hover {
+      .row {
+        background-color: $neon-blue;
+      }
+    }
   }
 }
 
@@ -245,6 +247,7 @@ body {
   display: block;
   margin-bottom: 6px;
   margin-top: 6px;
+  transition: all .3s;
 }
 
 .row3 {
@@ -269,7 +272,8 @@ body {
     // height: 947px;
     height: 100vh;
     padding-left: 50px;
-    padding-top: 132px;
+    // padding-top: 132px;
+    padding-top: 43px;
     font-size: 18px;
     line-height: 22px;
     background: rgba(1, 23, 32, 0.7);
@@ -315,9 +319,11 @@ body {
   transform: translate(0, -50%);
   right: 0px;
 }
+
 .slider__arrow-prev--hover {
   display: none;
 }
+
 .slick-arrow {
   cursor: pointer;
   background-color: transparent;
@@ -333,6 +339,7 @@ body {
       display: block;
     }
   }
+
   .arrow__wrapper {
     img {
       width: 55px;
@@ -340,6 +347,7 @@ body {
     }
   }
 }
+
 // КНОПКИ СЛАЙДЕР
 
 

@@ -10,30 +10,21 @@ $(function () {
   }));
 
 
-
-  $('.questions__item-title').on('click', (function () {
-
-    $('.questions__item').removeClass('questions__item--active');
-    $(this).parent().addClass('questions__item--active');
-
-  }));
-
-
   $('.reviews__slider__inner').slick({
     prevArrow: document.querySelector('.slick-prev'),
     nextArrow: document.querySelector('.slick-next'),
     infinite: true,
+    speed: 1000,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-     responsive: [
-       {
-         breakpoint: 500,
-         settings: {
-             dots: true,
-             arrows: false,
-         }
-       }
-     ]
+    responsive: [{
+      breakpoint: 500,
+      settings: {
+        dots: true,
+        arrows: false,
+      }
+    }]
   });
 
 
@@ -44,7 +35,7 @@ $(function () {
 
 
 
-  let inputs = document.querySelectorAll('.feedback__file');
+let inputs = document.querySelectorAll('.feedback__file');
 Array.prototype.forEach.call(inputs, function (input) {
   let label = input.nextElementSibling,
     labelVal = label.querySelector('.input__file-button-text').innerText;
@@ -59,4 +50,4 @@ Array.prototype.forEach.call(inputs, function (input) {
     else
       label.querySelector('.input__file-button-text').innerText = labelVal;
   });
-}); 
+});
