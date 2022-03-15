@@ -102,7 +102,7 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-.reviews__info-name--time, .questions__item-text, .projects__more, .spec__item-title span, .global__btn-mail, .global__btn-contact, .global-btn, html,
+.reviews__info-name--time, .questions__item-text, .projects__more, .spec__item-more, .global__btn-mail, .global__btn-contact, .global-btn, html,
 body {
   font-family: "Montserrat-Regular", sans-serif;
   font-weight: 400;
@@ -705,7 +705,7 @@ body {
   font-size: 24px;
   line-height: 26px;
   text-align: left;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 5px 50px;
   padding-right: 15px;
   -webkit-transition-duration: 1s, 1s;
        -o-transition-duration: 1s, 1s;
@@ -713,8 +713,14 @@ body {
   text-transform: uppercase;
   max-width: 380px;
 }
-.spec__item-title span {
-  display: none;
+
+.spec__item-more {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  margin-left: 50px;
+  text-transform: uppercase;
 }
 
 .spec__inner {
@@ -770,8 +776,8 @@ body {
   font-size: 28px;
   line-height: 30px;
 }
-.spec__item:hover .spec__item-title span {
-  display: block;
+.spec__item:hover .spec__item-more {
+  opacity: 1;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
@@ -867,14 +873,8 @@ body {
   line-height: 30px;
   margin-bottom: 30px;
 }
-.projects__item:hover .projects__item-title span {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
 .projects__item:hover .projects__more {
-  display: block;
+  opacity: 1;
   font-size: 14px;
   line-height: 16px;
   color: #00E0FF;
@@ -902,7 +902,11 @@ body {
 
 .projects__more {
   margin-left: 162px;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  text-transform: uppercase;
 }
 
 .projects__text-more {
@@ -1310,6 +1314,10 @@ body {
 .projects__item-title,
 .projects__text-more {
     margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .spec__item-more {
     margin-left: 30px;
   }
 

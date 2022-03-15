@@ -38,7 +38,7 @@
 
 .header__social {
   margin-right: 30px;
-//  height: 43px;
+  //  height: 43px;
 }
 
 .header__btn {
@@ -142,16 +142,19 @@
   line-height: 26px;
   @extend %Forum-Regular;
   text-align: left;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 5px 50px;
   padding-right: 15px;
   transition-duration: 1s, 1s;
   text-transform: uppercase;
   max-width: 380px;
+}
 
-  span {
-    display: none;
-    @extend %Mont-Regular;
-  }
+.spec__item-more {
+  opacity: 0;
+  @extend %Mont-Regular;
+  transition: all 1s;
+  margin-left: 50px;
+  text-transform: uppercase;
 }
 
 .spec__inner {
@@ -193,13 +196,13 @@
       color: $neon-blue;
       font-size: 28px;
       line-height: 30px;
+    }
 
-      span {
-        display: block;
-        font-size: 14px;
-        line-height: 16px;
-        color: $white;
-      }
+    .spec__item-more {
+      opacity: 1;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
     }
   }
 }
@@ -281,17 +284,10 @@
       font-size: 28px;
       line-height: 30px;
       margin-bottom: 30px;
-
-      span {
-        display: block;
-        font-size: 14px;
-        line-height: 16px;
-        color: $white;
-      }
     }
 
     .projects__more {
-      display: block;
+      opacity: 1;
       font-size: 14px;
       line-height: 16px;
       // color: $white;
@@ -319,17 +315,14 @@
   transition-duration: 1s, 1s;
   text-transform: uppercase;
   max-width: 727px;
-
-  // span {
-  //   display: none;
-  //   @extend %Mont-Regular;
-  // }
 }
 
 .projects__more {
   margin-left: 162px;
-  display: none;
+  opacity: 0;
   @extend %Mont-Regular;
+  transition: all 1s;
+  text-transform: uppercase;
 }
 
 .projects__text-more {

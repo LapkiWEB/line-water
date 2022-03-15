@@ -5,7 +5,6 @@
 }
 
 @media(max-width: 1450px) {
-
   .spec__text,
   .projects__text {
     padding: 0 30px;
@@ -21,7 +20,9 @@
     margin-top: 30px;
     margin-left: 30px;
   }
-
+  .spec__item-more{
+    margin-left: 30px;
+  }
   .projects__item {
     height: 500px;
   }
@@ -363,9 +364,7 @@
     margin-bottom: 20px;
   }
 
-  // .menu-mobil {
-  //   height: 100%;
-  // }
+ 
 
   .menu__wrapper {
     justify-content: center;
