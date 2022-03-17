@@ -702,6 +702,7 @@ body {
 }
 
 .spec__item-title {
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 26px;
   text-align: left;
@@ -772,15 +773,14 @@ body {
   border: 2px solid #00E0FF;
 }
 .spec__item:hover .spec__item-title {
-  color: #00E0FF;
   font-size: 28px;
   line-height: 30px;
 }
 .spec__item:hover .spec__item-more {
+  color: #00E0FF;
   opacity: 1;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
 }
 
 .benefits__title {
@@ -868,30 +868,25 @@ body {
   border: 2px solid #00E0FF;
 }
 .projects__item:hover .projects__item-title {
-  color: #00E0FF;
   font-size: 28px;
   line-height: 30px;
   margin-bottom: 30px;
 }
 .projects__item:hover .projects__more {
+  color: #00E0FF;
   opacity: 1;
   font-size: 14px;
   line-height: 16px;
-  color: #00E0FF;
-  text-transform: uppercase;
 }
 .projects__item:hover .projects__text-more {
-  display: none;
-}
-.projects__item:hover .projects-block {
-  display: block;
+  opacity: 0;
 }
 
 .projects__item-title {
   font-size: 24px;
   line-height: 26px;
   text-align: left;
-  margin: 50px 0 30px 162px;
+  margin: 50px 0 5px 162px;
   padding-right: 15px;
   -webkit-transition-duration: 1s, 1s;
        -o-transition-duration: 1s, 1s;
@@ -901,7 +896,6 @@ body {
 }
 
 .projects__more {
-  margin-left: 162px;
   opacity: 0;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -914,6 +908,10 @@ body {
   padding-right: 15px;
   max-width: 651px;
   margin-bottom: 20px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
 }
 
 .questions {
@@ -968,6 +966,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   padding: 0 98px 20px 50px;
+  display: none;
 }
 
 .questions__item-link {
@@ -980,12 +979,6 @@ body {
 
 .questions__item-title--img2 {
   display: none;
-}
-
-.questions__item[open] .questions__item-wrapper {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .reviews__wrapper {
@@ -1311,8 +1304,7 @@ body {
   }
 
   .spec__item-title,
-.projects__item-title,
-.projects__text-more {
+.projects__item-title {
     margin-top: 30px;
     margin-left: 30px;
   }
