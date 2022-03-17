@@ -204,13 +204,6 @@ body {
   width: 30px;
   cursor: pointer;
   z-index: 100;
-
-  &:hover {
-    .row {
-      background-color: $neon-blue;
-    }
-  }
-
   &.active {
     .row1 {
       transform: rotate(45deg);
@@ -230,12 +223,6 @@ body {
 
     .row3 {
       display: none;
-    }
-
-    &:hover {
-      .row {
-        background-color: $neon-blue;
-      }
     }
   }
 }
