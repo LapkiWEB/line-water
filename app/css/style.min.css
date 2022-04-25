@@ -1171,21 +1171,6 @@ body {
   color: #FFFFFF;
 }
 
-.feedback__btn {
-  margin-left: 50px;
-}
-
-.feedback__file__wrapper {
-  position: relative;
-}
-
-.feedback__file {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  width: 100%;
-}
-
 .footer {
   padding: 50px 0 50px;
   font-size: 14px;
@@ -1903,22 +1888,6 @@ body {
 
   .reviews__img {
     display: none;
-  }
-
-  .feedback__inners-btn {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .feedback__file__wrapper {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 30px;
   }
 
   .feedback__btn {

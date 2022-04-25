@@ -574,25 +574,9 @@
 
 .feedback__btn {
   color: $white;
+
 }
 
-.feedback__btn {
-  margin-left: 50px;
-}
-
-// ПРИКРЕПИТЬ ФАЙЛЫ
-.feedback__file__wrapper {
-  position: relative;
-}
-
-.feedback__file {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-// ПРИКРЕПИТЬ ФАЙЛЫ
 
 // end section feedback
 // start section footer
@@ -626,9 +610,11 @@
 .footer__item-menu {
   width: 350px;
 }
-.footer__item-requisites{
+
+.footer__item-requisites {
   width: 285px;
 }
+
 .footer__item-contacts {
   width: 470px;
 }
@@ -668,10 +654,12 @@
 .footer__social__wrapper {
   margin-bottom: 30px;
 }
-.footer__btn-wrapper{
+
+.footer__btn-wrapper {
   margin-left: auto;
   width: 170px;
 }
+
 .footer__btn {
   margin-bottom: 30px;
 }
@@ -694,6 +682,7 @@
     border-bottom: 1px solid $neon-blue;
   }
 }
+
 .lapli {
   max-width: 273px;
   width: 100%;
