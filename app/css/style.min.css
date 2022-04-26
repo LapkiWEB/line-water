@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
+.stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -891,6 +891,10 @@ body {
   margin-bottom: 100px;
 }
 
+.devbenefits__item {
+  width: 540px;
+}
+
 .benefits__subtitle {
   color: #00E0FF;
   font-size: 24px;
@@ -1388,6 +1392,24 @@ body {
 .lapki:hover {
   color: #00E0FF;
   border-bottom: 1px solid #00E0FF;
+}
+
+.stages__inner {
+  max-width: 1285px;
+  margin: 0 auto;
+}
+
+.stages__item {
+  margin-bottom: 50px;
+}
+
+.stages__item-title {
+  color: #00E0FF;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 1600px) {
@@ -1983,7 +2005,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .benefits__subtitle {
+  .benefits__subtitle,
+.stages__item-title {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 15px;
