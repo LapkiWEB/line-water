@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
+.work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -553,6 +553,7 @@ body {
   padding-right: 18px;
   margin-right: 3px;
   font-size: 14px;
+  text-transform: uppercase;
   position: relative;
 }
 .breadcrumbs__list-item::after {
@@ -1412,6 +1413,70 @@ body {
   letter-spacing: 2px;
 }
 
+.work {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.work__item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: auto;
+  padding: 25px 0;
+}
+
+.work__item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: auto;
+  padding: 25px 0;
+}
+
+.work__img {
+  max-width: 627px;
+  width: 100%;
+  height: 510px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.work__box {
+  max-width: 670px;
+  width: 100%;
+  padding: 0 90px;
+  margin-top: 60px;
+}
+
+.work__subtitle {
+  color: #00E0FF;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.work__line {
+  background-color: #F1FCFF;
+  height: 1px;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.work__btn {
+  margin-top: 25px;
+}
+
 @media (max-width: 1600px) {
   .menu.active {
     width: 735px;
@@ -1529,6 +1594,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .work__img {
+    width: 435px;
+    height: 355px;
   }
 }
 @media (max-width: 1024px) {
@@ -1659,6 +1729,21 @@ body {
   .footer__item-contacts {
     width: 825px;
   }
+
+  .devscreen {
+    height: 750px;
+  }
+
+  .work__box {
+    margin-top: 30px;
+    padding: 0 50px;
+    max-width: 550px;
+  }
+
+  .work__img {
+    max-width: 328px;
+    height: 265px;
+  }
 }
 @media (max-width: 850px) {
   html,
@@ -1669,6 +1754,10 @@ body {
 
   .header {
     padding: 15px 0;
+  }
+
+  .devscreen__box {
+    margin-top: 100px;
   }
 
   .menu.active {
@@ -1697,6 +1786,11 @@ body {
   .footer__item-contacts {
     margin-bottom: 0;
   }
+
+  .work__box {
+    padding: 0 30px;
+    max-width: 400px;
+  }
 }
 @media (max-height: 900px) {
   .menu.active {
@@ -1720,10 +1814,6 @@ body {
 
   .screen__box {
     margin-left: 0;
-  }
-
-  .devscreen {
-    height: 750px;
   }
 
   .devscreen__box,
@@ -1916,6 +2006,12 @@ body {
     padding-left: 15px;
   }
 
+  .screen__title,
+.devscreen__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
   .spec__wrapper-item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1953,6 +2049,27 @@ body {
   .feedback__item-text {
     width: 100%;
   }
+
+  .work__item-left,
+.work__item-right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+
+  .work__box {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .work__box-left {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 @media (max-width: 550px) {
   .footer__inner,
@@ -1969,12 +2086,6 @@ body {
 
   .screen__box {
     margin-top: 150px;
-  }
-
-  .screen__title,
-.devscreen__title {
-    font-size: 36px;
-    line-height: 40px;
   }
 
   .screen__subtitle,
@@ -2079,9 +2190,15 @@ body {
     height: 285px;
   }
 }
+@media (max-width: 450px) {
+  .devscreen__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 380px) {
-  .screen__title,
-.devscreen__title {
+  .screen__title {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
