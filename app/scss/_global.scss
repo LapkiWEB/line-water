@@ -204,6 +204,7 @@ body {
   width: 30px;
   cursor: pointer;
   z-index: 100;
+
   &.active {
     .row1 {
       transform: rotate(45deg);
@@ -246,6 +247,7 @@ body {
   display: none;
   position: absolute;
   z-index: 10;
+
   &.active {
     display: block;
     position: absolute;
@@ -265,18 +267,22 @@ body {
 .menu-mobil {
   height: fit-content;
 }
-.menu__mobil-btn{
+
+.menu__mobil-btn {
   margin-bottom: 30px;
 }
+
 .menu__wrapper {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
-  height: 100% ;
+  height: 100%;
 }
-.menu__mobil-box{
+
+.menu__mobil-box {
   margin-bottom: 25px;
 }
+
 .menu-mobil-services {
   margin: 50px 0 50px 15px;
 }
@@ -368,3 +374,92 @@ body {
 .slick-dots li[class="slick-active"] button {
   background-color: $neon-blue;
 }
+
+
+// start breadcrumbs
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 18px;
+  margin-right: 3px;
+  font-size: 14px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 7px;
+    background-image: url('../images/icons/breadcrumbs.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 10px;
+    height: 8px;
+  }
+
+  a {
+    transition: all .3s;
+    &:hover {
+      color: $neon-blue;
+    }
+  }
+}
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
+
+// end breadcrumbs
+
+
+// start str construction 
+// start section devscreen
+
+
+.devscreen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+}
+
+.devscreen__bg {
+  background-color: rgba(0, 32, 46, 0.7);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.devscreen__box {
+  width: fit-content;
+  margin-top: 130px;
+}
+
+.devscreen__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.devscreen__subtitle {
+  padding-top: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  @extend %Forum-Regular;
+  letter-spacing: 2px;
+}
+
+.devscreen__text {
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+// end section devscreen
+// end str construction 

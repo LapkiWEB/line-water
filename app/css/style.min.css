@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .title {
+.reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -544,6 +544,85 @@ body {
   background-color: #00E0FF;
 }
 
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 18px;
+  margin-right: 3px;
+  font-size: 14px;
+  position: relative;
+}
+.breadcrumbs__list-item::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 7px;
+  background-image: url("../images/icons/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 10px;
+  height: 8px;
+}
+.breadcrumbs__list-item a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.breadcrumbs__list-item a:hover {
+  color: #00E0FF;
+}
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
+
+.devscreen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+}
+
+.devscreen__bg {
+  background-color: rgba(0, 32, 46, 0.7);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.devscreen__box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 130px;
+}
+
+.devscreen__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.devscreen__subtitle {
+  padding-top: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.devscreen__text {
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.eot");
@@ -740,6 +819,16 @@ body {
   width: 100%;
 }
 
+.spec__text-more {
+  margin-left: 50px;
+  padding-right: 50px;
+  max-width: 380px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+}
+
 .spec__item {
   max-width: 480px;
   width: 100%;
@@ -776,6 +865,10 @@ body {
   opacity: 1;
   font-size: 14px;
   line-height: 16px;
+}
+.spec__item:hover .spec__text-more {
+  opacity: 0;
+  margin-top: 20px;
 }
 
 .benefits__title {
@@ -1022,7 +1115,7 @@ body {
 }
 
 .reviews__info {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .reviews__info-title {
@@ -1035,7 +1128,7 @@ body {
 }
 
 .reviews__info-img {
-  margin-right: 40px;
+  margin-right: 30px;
   width: 74px;
   height: 75px;
 }
@@ -1057,8 +1150,8 @@ body {
 }
 
 .reviews__info__wrapper {
-  padding-left: 115px;
-  width: 467px;
+  padding-left: 105px;
+  width: 527px;
 }
 
 .reviews__info-text {
@@ -1079,9 +1172,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 577px;
+  max-width: 540px;
   width: 100%;
-  height: 350px;
+  height: 328px;
   border-radius: 10px;
 }
 
@@ -1280,7 +1373,7 @@ body {
   border-bottom: 1px solid #00E0FF;
 }
 
-.lapli {
+.lapki {
   max-width: 273px;
   width: 100%;
   padding-top: 20px;
@@ -1292,7 +1385,7 @@ body {
   transition: all 0.3s;
   text-align: center;
 }
-.lapli:hover {
+.lapki:hover {
   color: #00E0FF;
   border-bottom: 1px solid #00E0FF;
 }
@@ -1312,7 +1405,8 @@ body {
     height: 500px;
   }
 
-  .projects__text-more {
+  .projects__text-more,
+.spec__text-more {
     margin-left: 30px;
   }
 
@@ -1457,13 +1551,15 @@ body {
     display: none;
   }
 
-  .screen__title {
+  .screen__title,
+.devscreen__title {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0px;
   }
 
-  .screen__subtitle {
+  .screen__subtitle,
+.devscreen__subtitle {
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
@@ -1509,6 +1605,9 @@ body {
 
   .reviews__item-wrapper {
     padding: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .reviews__info-img {
@@ -1599,6 +1698,15 @@ body {
 
   .screen__box {
     margin-left: 0;
+  }
+
+  .devscreen {
+    height: 750px;
+  }
+
+  .devscreen__box,
+.devscreen__title {
+    width: 100%;
   }
 
   .company__inner {
@@ -1807,7 +1915,8 @@ body {
     height: 350px;
   }
 
-  .projects__text-more {
+  .projects__text-more,
+.spec__text-more {
     display: none;
   }
 
@@ -1840,12 +1949,14 @@ body {
     margin-top: 150px;
   }
 
-  .screen__title {
+  .screen__title,
+.devscreen__title {
     font-size: 36px;
     line-height: 40px;
   }
 
-  .screen__subtitle {
+  .screen__subtitle,
+.devscreen__subtitle {
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
@@ -1899,6 +2010,10 @@ body {
     display: none;
   }
 
+  .slick-dots button {
+    margin: 8px;
+  }
+
   .reviews__slider {
     padding: 2px 15px;
   }
@@ -1942,7 +2057,8 @@ body {
   }
 }
 @media (max-width: 380px) {
-  .screen__title {
+  .screen__title,
+.devscreen__title {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;

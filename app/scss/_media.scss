@@ -15,7 +15,8 @@
     height: 500px;
   }
 
-  .projects__text-more {
+  .projects__text-more,
+  .spec__text-more {
     margin-left: 30px;
   }
 
@@ -148,13 +149,15 @@
     display: none;
   }
 
-  .screen__title {
+  .screen__title,
+  .devscreen__title {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0px;
   }
 
-  .screen__subtitle {
+  .screen__subtitle,
+  .devscreen__subtitle {
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
@@ -199,6 +202,7 @@
 
   .reviews__item-wrapper {
     padding: 40px;
+    justify-content: center;
   }
 
   .reviews__info-img {
@@ -289,18 +293,21 @@
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 
 @media(max-width: 768px) {
-
-
-
   .text {
     font-size: 16px;
     line-height: 20px;
   }
-
+  
   .screen__box {
     margin-left: 0;
   }
-
+  .devscreen{
+    height: 750px;
+  }
+  .devscreen__box,
+  .devscreen__title {
+    width: 100%;
+  }
   .company__inner {
     flex-wrap: wrap;
   }
@@ -368,7 +375,6 @@
   }
 
   .footer__inner {
-    //  justify-content: flex-start;
     justify-content: center;
   }
 
@@ -490,7 +496,8 @@
     height: 350px;
   }
 
-  .projects__text-more {
+  .projects__text-more,
+  .spec__text-more {
     display: none;
   }
 
@@ -526,13 +533,15 @@
     margin-top: 150px;
   }
 
-  .screen__title {
+  .screen__title,
+  .devscreen__title {
     font-size: 36px;
     line-height: 40px;
 
   }
 
-  .screen__subtitle {
+  .screen__subtitle,
+  .devscreen__subtitle {
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
@@ -578,17 +587,6 @@
     display: none;
   }
 
-  // .feedback__inners-btn {
-  //   flex-wrap: wrap;
-  // }
-
-  // .feedback__file__wrapper {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-bottom: 30px;
-  // }
-
   .feedback__btn {
     margin-left: 0;
   }
@@ -596,6 +594,10 @@
   .slick-next,
   .slick-prev {
     display: none;
+  }
+
+  .slick-dots button {
+    margin: 8px;
   }
 
   .reviews__slider {
@@ -641,11 +643,13 @@
   .menu__mobil-box {
     height: 285px;
   }
+  
 }
 
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 380px) {
-  .screen__title {
+  .screen__title,
+  .devscreen__title {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
