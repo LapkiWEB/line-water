@@ -2117,7 +2117,8 @@ body {
   }
 
   .benefits__subtitle,
-.stages__item-title {
+.stages__item-title,
+.work__subtitle {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 15px;
