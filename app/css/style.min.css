@@ -604,7 +604,8 @@ body {
   margin-top: 130px;
 }
 
-.devscreen__title {
+.devscreen__title,
+.start__title {
   text-transform: uppercase;
   font-size: 48px;
   line-height: 50px;
@@ -1477,6 +1478,14 @@ body {
   margin-top: 25px;
 }
 
+.start__box {
+  margin-top: 60px;
+}
+
+.start__wrapper {
+  text-align: center;
+}
+
 @media (max-width: 1600px) {
   .menu.active {
     width: 735px;
@@ -1644,7 +1653,8 @@ body {
   }
 
   .screen__title,
-.devscreen__title {
+.devscreen__title,
+.start__title {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0px;
@@ -1760,6 +1770,10 @@ body {
     margin-top: 100px;
   }
 
+  .start__box {
+    margin-top: 40px;
+  }
+
   .menu.active {
     padding: 35px 0 35px 35px;
   }
@@ -1817,7 +1831,8 @@ body {
   }
 
   .devscreen__box,
-.devscreen__title {
+.devscreen__title,
+.start__title {
     width: 100%;
   }
 
@@ -2007,7 +2022,8 @@ body {
   }
 
   .screen__title,
-.devscreen__title {
+.devscreen__title,
+.start__title {
     font-size: 36px;
     line-height: 40px;
   }
@@ -2192,7 +2208,8 @@ body {
   }
 }
 @media (max-width: 450px) {
-  .devscreen__title {
+  .devscreen__title,
+.start__title {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;

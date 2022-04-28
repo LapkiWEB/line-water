@@ -155,7 +155,8 @@
   }
 
   .screen__title,
-  .devscreen__title {
+  .devscreen__title,
+  .start__title {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0px;
@@ -268,6 +269,9 @@
   .devscreen__box{
     margin-top: 100px;
   }
+  .start__box{
+    margin-top: 40px;
+  }
   .menu {
     &.active {
       padding: 35px 0 35px 35px;
@@ -294,7 +298,6 @@
     margin-bottom: 0;
   }
   .work__box {
-  
     padding: 0 30px;
     max-width: 400px;
   }
@@ -330,7 +333,8 @@
   }
 
   .devscreen__box,
-  .devscreen__title {
+  .devscreen__title,
+  .start__title {
     width: 100%;
   }
 
@@ -502,7 +506,8 @@
   }
 
   .screen__title,
-  .devscreen__title {
+  .devscreen__title,
+  .start__title {
     font-size: 36px;
     line-height: 40px;
 
@@ -690,7 +695,8 @@
 
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 450px) {
- .devscreen__title {
+ .devscreen__title,
+ .start__title {
    font-size: 28px;
    line-height: 36px;
    margin-bottom: 30px;
