@@ -242,16 +242,22 @@
   .devscreen {
     height: 750px;
   }
-  .work__box{
+
+  .work__box {
     margin-top: 30px;
     padding: 0 50px;
     max-width: 550px;
   }
-  .work__img{
+
+  .work__img {
     max-width: 328px;
     height: 265px;
   }
 
+  .water__list {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 @media(max-width: 850px) {
@@ -266,12 +272,14 @@
     padding: 15px 0;
   }
 
-  .devscreen__box{
+  .devscreen__box {
     margin-top: 100px;
   }
-  .start__box{
+
+  .start__box {
     margin-top: 40px;
   }
+
   .menu {
     &.active {
       padding: 35px 0 35px 35px;
@@ -297,9 +305,14 @@
   .footer__item-contacts {
     margin-bottom: 0;
   }
+
   .work__box {
     padding: 0 30px;
     max-width: 400px;
+  }
+
+  .about__item {
+    margin-right: 0;
   }
 }
 
@@ -345,6 +358,7 @@
   .company__item {
     max-width: 100%;
   }
+
 
   .spec__item {
     max-width: 384px;
@@ -454,6 +468,13 @@
     max-width: 470px;
     width: 100%;
   }
+  .water__list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .map{
+    height: 250px;
+  }
 }
 
 
@@ -550,17 +571,20 @@
   .feedback__item-text {
     width: 100%;
   }
+
   .work__item-left,
   .work__item-right {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 0;
   }
-  .work__box{
+
+  .work__box {
     max-width: 100%;
     margin-bottom: 30px;
   }
-  .work__box-left{
+
+  .work__box-left {
     order: -1;
   }
 }
@@ -667,6 +691,20 @@
   .footer__item-contacts {
     margin-bottom: 0;
   }
+
+  .about__box-img {
+    width: 166px;
+    height: 232px;
+  }
+
+  .about__box-wrapper {
+    padding-left: 20px;
+  }
+
+  .about__box-name {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 // ВЕРТИКАЛЬ ВНИЗ!!!
@@ -695,13 +733,15 @@
 
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 450px) {
- .devscreen__title,
- .start__title {
-   font-size: 28px;
-   line-height: 36px;
-   margin-bottom: 30px;
- }
+
+  .devscreen__title,
+  .start__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
 }
+
 @media(max-width: 380px) {
 
   .screen__title {

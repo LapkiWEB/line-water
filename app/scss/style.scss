@@ -798,23 +798,102 @@
   max-width: 630px;
   margin: 0 auto;
 }
-.work__btn{
+
+.work__btn {
   margin-top: 25px;
 }
+
 // end section work
 
 // start section start
-.start__box{
+.start__box {
   margin-top: 60px;
 }
-.start__wrapper{
+
+.start__wrapper {
   text-align: center;
 }
 
-
-
 // end section start
 
+// start section about
+.start__box-about{
+  padding-top: 70px;
+}
+.about__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  width: 540px;
+  // padding-right: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.about__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.about__box-img{
+  width: 237px;
+  height: 332px;
+  border-radius: 5px;
+}
+.about__box-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-left: 30px;
+}
+
+.about__box-name {
+  @extend %Forum-Regular;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  color: $neon-blue;
+  letter-spacing: 1px;
+}
+
+
+// end section about
+// start section water
+.water{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.water__list {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  .blue {
+    color: $neon-blue;
+  }
+  .number{
+    width: 37px;
+    padding-right: 15px;
+  }
+}
+.water__text {
+  margin: 0 auto;
+  max-width: 1370px;
+  width: 100%;
+}
+
+.map__inner{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+// end section water
 
 
 
