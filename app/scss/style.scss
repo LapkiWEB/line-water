@@ -366,12 +366,14 @@
   max-width: 1274px;
   margin: 0 auto;
 }
+
 .questions__item-inners {
   position: relative;
   z-index: 1;
   background: rgba(0, 45, 66, 0.9);
   border-radius: 10px;
 }
+
 .questions__item {
   margin-bottom: 50px;
   color: $white;
@@ -425,7 +427,7 @@
 .questions__item-link {
   color: $neon-blue;
   border-bottom: 1px solid transparent;
-
+transition: all .3s;
   &:hover {
     border-bottom: 1px solid $neon-blue;
   }
@@ -975,8 +977,6 @@
   justify-content: space-between;
   z-index: 1;
 }
-// end section jobs
-
 
 .jobs_info {
   padding-right: 30px;
@@ -1016,9 +1016,38 @@
   margin-bottom: 50px;
 }
 
+// end section jobs
 
+// start section employee
+.employee__item {
+  margin-bottom: 50px;
+}
 
+.employee__title {
+  @extend %Forum-Regular;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $neon-blue;
+}
 
+.employee__subtext{
+  padding-top: 50px;
+}
+.employee__link {
+  color: $neon-blue;
+  border-bottom: 1px solid transparent;
+  transition: all .3s;
+
+  &:hover {
+    border-bottom: 1px solid $neon-blue;
+  }
+}
+
+// end section employee
 
 
 

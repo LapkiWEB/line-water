@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.jobs__info-name, .about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
+.employee__title, .jobs__info-name, .about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -1081,6 +1081,9 @@ body {
 .questions__item-link {
   color: #00E0FF;
   border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .questions__item-link:hover {
   border-bottom: 1px solid #00E0FF;
@@ -1688,6 +1691,37 @@ body {
 
 .jobs__info-text {
   margin-bottom: 50px;
+}
+
+.employee__item {
+  margin-bottom: 50px;
+}
+
+.employee__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00E0FF;
+}
+
+.employee__subtext {
+  padding-top: 50px;
+}
+
+.employee__link {
+  color: #00E0FF;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.employee__link:hover {
+  border-bottom: 1px solid #00E0FF;
 }
 
 @media (max-width: 1600px) {
