@@ -366,7 +366,12 @@
   max-width: 1274px;
   margin: 0 auto;
 }
-
+.questions__item-inners {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 45, 66, 0.9);
+  border-radius: 10px;
+}
 .questions__item {
   margin-bottom: 50px;
   color: $white;
@@ -457,7 +462,7 @@
 
 .reviews__item-wrapper {
   background-color: rgba(0, 45, 66, 0.7);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   padding: 75px;
   border-radius: 10px;
   display: flex;
@@ -574,6 +579,8 @@
   border-radius: 10px;
   cursor: pointer;
   margin-right: 15px;
+  position: relative;
+  z-index: 1;
   overflow: none;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
@@ -948,10 +955,66 @@
 
 // end section politics
 
+// start section jobs
+
+.jobs__item {
+  position: relative;
+  max-width: 1244px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+
+.jobs__item-wrapper {
+  background-color: rgba(0, 45, 66, 1);
+  backdrop-filter: blur(10px);
+  padding: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+// end section jobs
 
 
+.jobs_info {
+  padding-right: 30px;
 
+}
 
+.jobs__info-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.jobs__info-img {
+  margin-right: 30px;
+  width: 74px;
+  height: 75px;
+}
+
+.jobs__info-name {
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+  @extend %Forum-Regular;
+  color: $neon-blue;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.jobs__info__wrapper {
+  padding-left: 105px;
+  max-width: 940px;
+  width: 100%;
+}
+
+.jobs__info-text {
+  margin-bottom: 50px;
+}
 
 
 

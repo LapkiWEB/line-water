@@ -505,6 +505,9 @@
     font-size: 30px;
     line-height: 40px;
   }
+  .jobs__item-wrapper{
+    padding: 45px;
+  }
 }
 
 
@@ -761,6 +764,22 @@
   .politics__subtitle{
     font-size: 20px;
     line-height: 30px;
+  }
+  .jobs__item-wrapper{
+    padding: 15px;
+  }
+  .jobs__info-img{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 61px;
+  }
+  .jobs__info__wrapper{
+    padding-left: 0px;
+  }
+  .jobs__info-name{
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

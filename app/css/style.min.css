@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
+.jobs__info-name, .about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -274,7 +274,6 @@ body {
   background: -o-linear-gradient(top, rgba(241, 252, 255, 0.3), #002d42);
   background: linear-gradient(180deg, rgba(241, 252, 255, 0.3), #002d42);
   border-radius: 10px;
-  z-index: -1;
 }
 
 .global-btn {
@@ -1023,6 +1022,13 @@ body {
   margin: 0 auto;
 }
 
+.questions__item-inners {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 45, 66, 0.9);
+  border-radius: 10px;
+}
+
 .questions__item {
   margin-bottom: 50px;
   color: #FFFFFF;
@@ -1108,8 +1114,8 @@ body {
 
 .reviews__item-wrapper {
   background-color: rgba(0, 45, 66, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
   padding: 75px;
   border-radius: 10px;
   display: -webkit-box;
@@ -1236,6 +1242,8 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin-right: 15px;
+  position: relative;
+  z-index: 1;
   overflow: none;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
@@ -1616,6 +1624,69 @@ body {
 .politics__subtitle {
   font-size: 36px;
   line-height: 44px;
+  margin-bottom: 50px;
+}
+
+.jobs__item {
+  position: relative;
+  max-width: 1244px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.jobs__item-wrapper {
+  background-color: #002d42;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 70px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.jobs_info {
+  padding-right: 30px;
+}
+
+.jobs__info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.jobs__info-img {
+  margin-right: 30px;
+  width: 74px;
+  height: 75px;
+}
+
+.jobs__info-name {
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+  color: #00E0FF;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.jobs__info__wrapper {
+  padding-left: 105px;
+  max-width: 940px;
+  width: 100%;
+}
+
+.jobs__info-text {
   margin-bottom: 50px;
 }
 
@@ -2153,6 +2224,10 @@ body {
     font-size: 30px;
     line-height: 40px;
   }
+
+  .jobs__item-wrapper {
+    padding: 45px;
+  }
 }
 @media (max-height: 750px) {
   .menu.active {
@@ -2407,6 +2482,26 @@ body {
   .politics__subtitle {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .jobs__item-wrapper {
+    padding: 15px;
+  }
+
+  .jobs__info-img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 61px;
+  }
+
+  .jobs__info__wrapper {
+    padding-left: 0px;
+  }
+
+  .jobs__info-name {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media (max-height: 450px) {
