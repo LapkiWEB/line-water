@@ -109,6 +109,10 @@
     width: 435px;
     height: 355px;
   }
+  .news__img{
+    width: 435px;
+    height: 264px;
+  }
 }
 
 @media(max-width: 1024px) {
@@ -327,6 +331,17 @@
   .about__item {
     margin-right: 0;
   }
+  .news__item{
+    flex-wrap: wrap;
+  }
+  .news__img{
+    margin: 0 auto;
+      margin-bottom: 30px;
+  }
+.news__info{
+  max-width: 435px;
+  margin: 0 auto;
+}
 }
 
 // ВЕРТИКАЛЬ ВНИЗ!!!
@@ -781,6 +796,13 @@
     font-size: 20px;
     line-height: 20px;
   }
+  .news__img{
+    width: 394px;
+    height: 239px;
+  }
+  .news__info{
+    width: 394px;
+  }
 }
 
 // ВЕРТИКАЛЬ ВНИЗ!!!
@@ -815,6 +837,14 @@
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
+  }
+  .news__img {
+    width: 291px;
+    height: 195px;
+  }
+
+  .news__info {
+    width: 291px;
   }
 }
 

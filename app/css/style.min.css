@@ -109,7 +109,7 @@ body {
   display: swap;
 }
 
-.employee__title, .jobs__info-name, .about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
+.news__title, .employee__title, .jobs__info-name, .about__box-name, .work__subtitle, .stages__item-title, .reviews__info-name, .questions__item-title, .projects__item-title, .benefits__subtitle, .spec__item-title, .company__item-title, .screen__subtitle, .devscreen__subtitle, .title {
   font-family: "Forum-Regular", sans-serif;
   font-weight: 400;
   display: swap;
@@ -1724,6 +1724,54 @@ body {
   border-bottom: 1px solid #00E0FF;
 }
 
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 100px;
+}
+
+.news__img {
+  width: 577px;
+  height: 350px;
+}
+
+.news__info {
+  max-width: 740px;
+  width: 100%;
+  margin-left: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.news__title {
+  font-size: 24px;
+  line-height: 26px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00E0FF;
+  margin-bottom: 5px;
+}
+
+.news__text {
+  margin-bottom: 30px;
+}
+
+.news__date {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1600px) {
   .menu.active {
     width: 735px;
@@ -1846,6 +1894,11 @@ body {
   .work__img {
     width: 435px;
     height: 355px;
+  }
+
+  .news__img {
+    width: 435px;
+    height: 264px;
   }
 }
 @media (max-width: 1024px) {
@@ -2064,6 +2117,21 @@ body {
 
   .about__item {
     margin-right: 0;
+  }
+
+  .news__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .news__img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .news__info {
+    max-width: 435px;
+    margin: 0 auto;
   }
 }
 @media (max-height: 900px) {
@@ -2537,6 +2605,15 @@ body {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .news__img {
+    width: 394px;
+    height: 239px;
+  }
+
+  .news__info {
+    width: 394px;
+  }
 }
 @media (max-height: 450px) {
   .screen__box {
@@ -2565,6 +2642,15 @@ body {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
+  }
+
+  .news__img {
+    width: 291px;
+    height: 195px;
+  }
+
+  .news__info {
+    width: 291px;
   }
 }
 @media (max-width: 380px) {

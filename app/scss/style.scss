@@ -427,7 +427,8 @@
 .questions__item-link {
   color: $neon-blue;
   border-bottom: 1px solid transparent;
-transition: all .3s;
+  transition: all .3s;
+
   &:hover {
     border-bottom: 1px solid $neon-blue;
   }
@@ -1034,9 +1035,10 @@ transition: all .3s;
   color: $neon-blue;
 }
 
-.employee__subtext{
+.employee__subtext {
   padding-top: 50px;
 }
+
 .employee__link {
   color: $neon-blue;
   border-bottom: 1px solid transparent;
@@ -1049,7 +1051,46 @@ transition: all .3s;
 
 // end section employee
 
+// start section news
+.news__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
 
+.news__img {
+  width: 577px;
+  height: 350px;
+}
+
+.news__info {
+  max-width: 740px;
+  width: 100%;
+  margin-left: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.news__title {
+  @extend %Forum-Regular;
+  font-size: 24px;
+  line-height: 26px;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $neon-blue;
+  margin-bottom: 5px;
+}
+.news__text{
+ margin-bottom: 30px;
+}
+.news__date {
+  margin-bottom: 50px;
+
+}
+
+// end section news
 
 
 
