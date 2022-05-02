@@ -904,10 +904,11 @@
 
 
 // start section mistake
-.mistake{
+.mistake {
   text-align: center;
   margin-top: 100px;
 }
+
 .mistake__title {
   font-size: 96px;
   line-height: 96px;
@@ -921,11 +922,31 @@
   line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 50px;
+
 }
 
 // end section mistake
 
+// start section politics
 
+.politics {
+  margin-top: 100px;
+}
+
+.politics__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.politics__subtitle {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 50px;
+}
+
+// end section politics
 
 
 

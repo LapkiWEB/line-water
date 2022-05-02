@@ -258,6 +258,19 @@
     font-size: 18px;
     line-height: 20px;
   }
+
+  .politics {
+    margin-top: 80px;
+  }
+
+  .politics__title {
+    line-height: 55px;
+  }
+
+  .politics__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 @media(max-width: 850px) {
@@ -486,6 +499,11 @@
   .mistake__subtitle {
     font-size: 36px;
     line-height: 43px;
+  }
+
+  .politics__title {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -732,6 +750,17 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+  }
+  .politics{
+    margin-top: 50px;
+  }
+  .politics__title{
+    font-size: 20px;
+     line-height: 30px;
+  }
+  .politics__subtitle{
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
