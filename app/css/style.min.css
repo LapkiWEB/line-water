@@ -1582,6 +1582,26 @@ body {
           justify-content: center;
 }
 
+.mistake {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mistake__title {
+  font-size: 96px;
+  line-height: 96px;
+  color: #00E0FF;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.mistake__subtitle {
+  font-size: 48px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1600px) {
   .menu.active {
     width: 735px;
@@ -2088,6 +2108,16 @@ body {
   .map {
     height: 250px;
   }
+
+  .mistake__title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .mistake__subtitle {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 @media (max-height: 750px) {
   .menu.active {
@@ -2312,6 +2342,22 @@ body {
   .about__box-name {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .mistake {
+    margin-top: 65px;
+  }
+
+  .mistake__title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+  .mistake__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-height: 450px) {

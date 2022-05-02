@@ -817,9 +817,10 @@
 // end section start
 
 // start section about
-.start__box-about{
+.start__box-about {
   padding-top: 70px;
 }
+
 .about__inner {
   display: flex;
   justify-content: space-around;
@@ -838,11 +839,13 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.about__box-img{
+
+.about__box-img {
   width: 237px;
   height: 332px;
   border-radius: 5px;
 }
+
 .about__box-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -863,31 +866,35 @@
 
 // end section about
 // start section water
-.water{
+.water {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
+
 .water__list {
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   display: flex;
+
   .blue {
     color: $neon-blue;
   }
-  .number{
+
+  .number {
     width: 37px;
     padding-right: 15px;
   }
 }
+
 .water__text {
   margin: 0 auto;
   max-width: 1370px;
   width: 100%;
 }
 
-.map__inner{
+.map__inner {
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -896,7 +903,27 @@
 // end section water
 
 
+// start section mistake
+.mistake{
+  text-align: center;
+  margin-top: 100px;
+}
+.mistake__title {
+  font-size: 96px;
+  line-height: 96px;
+  color: $neon-blue;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
 
+.mistake__subtitle {
+  font-size: 48px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+// end section mistake
 
 
 

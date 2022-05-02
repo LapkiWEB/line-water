@@ -468,12 +468,24 @@
     max-width: 470px;
     width: 100%;
   }
+
   .water__list {
     font-size: 16px;
     line-height: 20px;
   }
-  .map{
+
+  .map {
     height: 250px;
+  }
+
+  .mistake__title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .mistake__subtitle {
+    font-size: 36px;
+    line-height: 43px;
   }
 }
 
@@ -704,6 +716,22 @@
   .about__box-name {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .mistake {
+    margin-top: 65px;
+  }
+
+  .mistake__title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+  .mistake__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 
