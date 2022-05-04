@@ -48,6 +48,17 @@
     width: 100%;
     margin-bottom: 30px;
   }
+
+  .product1-img {
+    width: 502px;
+    height: 526px;
+  }
+
+
+  .slider-for.slick-initialized.slick-slider {
+    width: 502px !important;
+  }
+
 }
 
 @media(max-width: 1300px) {
@@ -109,9 +120,40 @@
     width: 435px;
     height: 355px;
   }
-  .news__img{
+
+  .news__img {
     width: 435px;
     height: 264px;
+  }
+
+  .product__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .product__box {
+    order: -1;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .product__inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product1-img {
+    max-width: 800px;
+    width: 100%;
+
+  }
+
+
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 800px;
+    width: 100% !important;
+    margin: 0 auto;
   }
 }
 
@@ -331,17 +373,44 @@
   .about__item {
     margin-right: 0;
   }
-  .news__item{
+
+  .news__item {
     flex-wrap: wrap;
   }
-  .news__img{
+
+  .news__img {
     margin: 0 auto;
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
-.news__info{
-  max-width: 435px;
-  margin: 0 auto;
-}
+
+  .news__info {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+
+  .product__inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product1-img {
+    max-width: 601px;
+    width: 100%;
+    height: 416px;
+  }
+
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 601px;
+  }
+
+  .product2-img {
+    width: 230px;
+    height: 160px;
+  }
+
+
 }
 
 // ВЕРТИКАЛЬ ВНИЗ!!!
@@ -520,7 +589,8 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .jobs__item-wrapper{
+
+  .jobs__item-wrapper {
     padding: 45px;
   }
 }
@@ -565,7 +635,12 @@
 }
 
 // ВЕРТИКАЛЬ ВВЕРХ!!!
-@media(max-width: 700px) {}
+@media(max-width: 650px) {
+  .product2-img {
+    width: 165px;
+    height: 115px;
+  }
+}
 
 @media(max-width: 600px) {
 
@@ -635,6 +710,17 @@
   .work__box-left {
     order: -1;
   }
+
+  .product1-img {
+    max-width: 396px;
+    width: 100%;
+    height: 275px;
+  }
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 396px;
+  }
+
 }
 
 @media(max-width: 550px) {
@@ -769,39 +855,59 @@
     line-height: 30px;
     margin-bottom: 30px;
   }
-  .politics{
+
+  .politics {
     margin-top: 50px;
   }
-  .politics__title{
-    font-size: 20px;
-     line-height: 30px;
-  }
-  .politics__subtitle{
+
+  .politics__title {
     font-size: 20px;
     line-height: 30px;
   }
-  .jobs__item-wrapper{
+
+  .politics__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .jobs__item-wrapper {
     padding: 15px;
   }
-  .jobs__info-img{
+
+  .jobs__info-img {
     margin-right: 15px;
     margin-bottom: 15px;
     width: 60px;
     height: 61px;
   }
-  .jobs__info__wrapper{
+
+  .jobs__info__wrapper {
     padding-left: 0px;
   }
-  .jobs__info-name{
+
+  .jobs__info-name {
     font-size: 20px;
     line-height: 20px;
   }
-  .news__img{
+
+  .news__img {
     width: 394px;
     height: 239px;
   }
-  .news__info{
+
+  .news__info {
     width: 394px;
+  }
+
+  .slider-nav {
+    .slick-dots {
+      padding-top: 20px;
+    }
+  }
+
+  .product2-img {
+    width: 93px;
+    height: 65px;
   }
 }
 
@@ -838,6 +944,7 @@
     line-height: 36px;
     margin-bottom: 30px;
   }
+
   .news__img {
     width: 291px;
     height: 195px;
@@ -846,7 +953,9 @@
   .news__info {
     width: 291px;
   }
+
 }
+
 
 @media(max-width: 380px) {
 
