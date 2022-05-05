@@ -202,6 +202,9 @@
     width: 100% !important;
     margin: 0 auto;
   }
+  .modal__wrapper{
+    max-width: 550px;
+  }
 }
 
 @media(max-width: 1024px) {
@@ -364,7 +367,9 @@
     font-size: 24px;
     line-height: 30px;
   }
-
+  .close__btn{
+    top: 0;
+  }
 }
 
 @media(max-width: 850px) {

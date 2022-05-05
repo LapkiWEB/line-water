@@ -388,6 +388,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   position: relative;
+
   &::after {
     position: absolute;
     content: '';
@@ -403,6 +404,7 @@ body {
 
   a {
     transition: all .3s;
+
     &:hover {
       color: $neon-blue;
     }
@@ -465,3 +467,145 @@ body {
 
 // end section devscreen
 // end str construction 
+
+
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 23, 32, 0.7);
+  backdrop-filter: blur(10px);
+  display: none;
+
+}
+
+
+
+.modal__inner {
+  width: 100%;
+
+}
+
+.modal__wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal__title {
+  position: relative;
+}
+
+.close__btn {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: $white;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.capture__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.capture__line {
+  width: 30px;
+  background-color: $white;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.capture__line1 {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.capture__line2 {
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+
+
+.capture {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 23, 32, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  display: none;
+
+}
+.show {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.capture__inner {
+  border: 3px solid $neon-blue;
+  position: relative;
+  width: 636px;
+  height: 403px;
+  padding: 60px 30px 40px;
+  text-align: center;
+  background: rgba(0, 32, 46, 0.8);
+  margin: 0 auto;
+}
+.capture__text {
+  margin-bottom: 50px;
+}
+.capture__item {
+  width: 300px !important;
+  margin: 0 auto;
+}

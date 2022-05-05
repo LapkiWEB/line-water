@@ -35,9 +35,9 @@ $(function () {
     }]
   });
 
-  jQuery(function ($) {
-    $("#phone").mask("+7 (999) 999-99-99");
-  });
+  // jQuery(function ($) {
+  $("#phone").mask("+7 (999) 999-99-99");
+  // });
 
 
 
@@ -75,13 +75,13 @@ $(function () {
           slidesToShow: 2,
         }
       },
-        {
-          breakpoint: 370,
-          settings: {
-            slidesToShow: 2,
-            centerPadding: '20px',
-          }
-        },
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: '20px',
+        }
+      },
     ]
   });
 
@@ -108,7 +108,7 @@ $(function () {
           slidesToShow: 1,
           dots: true,
           arrows: false,
-            centerMode: false,
+          centerMode: false,
         }
       },
     ]
@@ -119,3 +119,42 @@ $(function () {
 
 
 })
+
+
+window.addEventListener('DOMContentLoaded', function () {
+
+
+
+  const modalTrigger = document.querySelectorAll('[data-modal]'),
+    modal = document.querySelector('.modal'),
+    modalCloseBtn = document.querySelector('[data-close]');
+
+  modalTrigger.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('show');
+      modal.classList.remove('hide');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function clossModel() {
+    modal.classList.add('hide');
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  modalCloseBtn.addEventListener('click', clossModel);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      clossModel();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === "Escape" && modal.classList.contains('show')) {
+      clossModel();
+    }
+  });
+
+});
