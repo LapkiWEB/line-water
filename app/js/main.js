@@ -75,6 +75,13 @@ $(function () {
           slidesToShow: 2,
         }
       },
+        {
+          breakpoint: 370,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '20px',
+          }
+        },
     ]
   });
 
