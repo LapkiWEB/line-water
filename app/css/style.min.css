@@ -1227,6 +1227,7 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .questions__item-link:hover {
   border-bottom: 1px solid #00E0FF;
@@ -2052,6 +2053,10 @@ body {
 }
 .article__link:hover {
   border-bottom: 1px solid #00E0FF;
+}
+
+.article__down-link {
+  padding-top: 30px;
 }
 
 .article__inner {

@@ -160,12 +160,15 @@ document.addEventListener('keydown', (e) => {
 // });
 
 
+
+
+
 $(function () {
   const block = document.getElementById('leave');
-  $(block).on('click', function () {
-    block.classList.remove('show');
+  // $(block).on('click', function () {
+  //   block.classList.remove('show');
  
-  });
+  // });
 
   setTimeout(function () {
     $(document).mouseleave(function (e) {

@@ -16,7 +16,7 @@
           <img class="logo__img" src="images/logo/logo.png" alt="">
         </a>
         <div class="header__contacts">
-          <a class="global__btn-contact global-btn header__phone" href="#">
+          <a class="global__btn-contact global-btn header__phone" href="tel:+79210941255">
             +7 921 094 12 55
           </a>
           <ul class="global__social header__social">
@@ -199,8 +199,8 @@
                   </a>
                 </li>
                 <li class="menu__mobil-list">
-                  <a class="menu__mobil-list--link" href="about.html">
-                    КОНТАКТЫ
+                  <a class="menu__mobil-list--link" href="jobs.html">
+                    Вакансии
                   </a>
                 </li>
                 <li class="menu__mobil-list">
@@ -368,12 +368,12 @@
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__list-item">
-                  <a class="breadcrumbs__item-link" href="#">
+                  <a class="breadcrumbs__item-link" href="index.html">
                     ГЛАВНАЯ
                   </a>
                 </li>
                 <li class="breadcrumbs__list-item">
-                  <a class="breadcrumbs__item-link" href="#">
+                  <a class="breadcrumbs__item-link" href="gallery.html">
                     галерея работ
                   </a>
                 </li>
@@ -546,7 +546,7 @@
           </div>
 
           <div class="global__inner-btn">
-            <a class="global__btn-contact main-btn global-btn" href="#">
+            <a class="global__btn-contact main-btn global-btn" href="gallery.html">
               Смотреть другие проекты
             </a>
           </div>
@@ -902,6 +902,92 @@
 
 
     </footer>
+
+
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="container">
+          <div class="modal__wrapper">
+
+            <ul data-close class="close__btn">
+              <li class="close__line close__line1"></li>
+              <li class="close__line close__line2"></li>
+            </ul>
+
+            <h2 class="modal__title title">
+              Оставить заявку
+            </h2>
+
+            <form class="feedback-form">
+              <div class="feedback__inner">
+
+
+                <div class="feedback__wrapper">
+                  <div class="feedback__input__wrapper">
+                    <div class="global__item-bg">
+                      <input class="feedback__item text" type="text" name="name" placeholder="Ваше имя..." required>
+                    </div>
+                  </div>
+                  <div class="feedback__input__wrapper">
+                    <div class="global__item-bg">
+                      <input class="feedback__item text" type="text" name="phone" id="phone"
+                        placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__input__wrapper">
+                  <div class="global__item-bg">
+                    <textarea class="feedback__item text feedback__item-text global__item-bg" name="text"
+                      placeholder="Ваше сообщение..."></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="global__inner-btn">
+                <button class="feedback__btn main-btn global__btn-contact global-btn">
+                  Отправить
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="capture" id="leave">
+      <div class="capture__inner">
+        <ul class="capture__btn" onclick="document.getElementById('leave').style.display='none'; return false;">
+          <li class="capture__line close__line1"></li>
+          <li class="capture__line close__line2"></li>
+        </ul>
+        <h2 class="capture__title title">
+          НЕ НАШЛИ ЧТО ИСКАЛИ?
+        </h2>
+        <p class="capture__text text">
+          Оставьте номер телефона и мы Вам перезвоним!
+        </p>
+        <form class="feedback-form">
+
+
+
+
+          <div class="feedback__input__wrapper capture__item">
+            <div class="global__item-bg">
+              <input class="feedback__item  text" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__"
+                required>
+            </div>
+          </div>
+
+          <div class="global__inner-btn">
+            <button class="feedback__btn main-btn global__btn-contact global-btn">
+              Перезвоните мне
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
 
 
 

@@ -428,7 +428,7 @@
   color: $neon-blue;
   border-bottom: 1px solid transparent;
   transition: all .3s;
-
+  cursor: pointer;
   &:hover {
     border-bottom: 1px solid $neon-blue;
   }
@@ -1222,7 +1222,9 @@
     border-bottom: 1px solid $neon-blue;
   }
 }
-
+.article__down-link{
+  padding-top: 30px;
+}
 
 
 
