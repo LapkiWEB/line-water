@@ -143,11 +143,18 @@
 
   .reviews__info__wrapper {
     width: 100%;
-    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__info-text{
+    height: 100px;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 
   .reviews__img {
-    margin-left: 115px;
+    margin-left: 107px;
   }
 
   .feedback__inner {
@@ -865,6 +872,7 @@
 
   .reviews__item-wrapper {
     padding: 15px 20px;
+    margin-bottom: 20px;
   }
 
   .reviews__img {

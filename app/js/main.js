@@ -24,8 +24,8 @@ $(function () {
     cssEase: 'linear',
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 7000,
+    autoplay: true,
+    autoplaySpeed: 7000,
     responsive: [{
       breakpoint: 500,
       settings: {
@@ -190,6 +190,6 @@ $(function () {
       block.classList.add('show');
  
     });
-  }, 10000);
+  }, 12000);
 
 });
