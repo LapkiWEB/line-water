@@ -1941,6 +1941,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 3px;
 }
 
 .product__box {
@@ -2620,7 +2621,7 @@ body {
 @media (max-width: 768px) {
   .text {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
   }
 
   .screen__box {
@@ -3196,5 +3197,14 @@ body {
   .article__img {
     width: 250px;
     height: 218px;
+  }
+
+  .product2-img {
+    max-width: 100px;
+    height: 70px;
+  }
+
+  .product2.slick-slide.slick-current.slick-active.slick-center .product2-wrapper {
+    max-width: 114px;
   }
 }
