@@ -202,7 +202,8 @@
     width: 100% !important;
     margin: 0 auto;
   }
-  .modal__wrapper{
+
+  .modal__wrapper {
     max-width: 550px;
   }
 }
@@ -367,7 +368,8 @@
     font-size: 24px;
     line-height: 30px;
   }
-  .close__btn{
+
+  .close__btn {
     top: 0;
   }
 }
@@ -459,10 +461,15 @@
   }
 
   .product2-img {
-    width: 230px;
+    max-width: 230px;
     height: 160px;
   }
 
+  .product2.slick-slide.slick-current.slick-active.slick-center {
+    .product2-wrapper {
+      max-width: 242px;
+    }
+  }
 
 }
 
@@ -696,13 +703,19 @@
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 650px) {
   .product2-img {
-    width: 165px;
+    max-width: 165px;
     height: 115px;
+  }
+  .product2.slick-slide.slick-current.slick-active.slick-center {
+    .product2-wrapper {
+      max-width: 177px;
+    }
   }
     .capture__inner {
       margin-left: 30px;
       margin-right: 30px;
     }
+
 }
 
 @media(max-width: 600px) {
@@ -978,11 +991,6 @@
     }
   }
 
-  .product2-img {
-    width: 93px;
-    height: 65px;
-  }
-
   .article__inner {
     .slick-dots {
       padding-top: 20px;
@@ -1003,7 +1011,7 @@
     display: block;
   }
 
-  .article__up-img{
+  .article__up-img {
     width: 300px;
     height: 201px;
   }
@@ -1050,6 +1058,16 @@
 
   .news__info {
     width: 291px;
+  }
+  .product2-img {
+    max-width: 132px;
+    height: 96px;
+  }
+
+  .product2.slick-slide.slick-current.slick-active.slick-center {
+    .product2-wrapper {
+      max-width: 146px;
+    }
   }
 
 }
