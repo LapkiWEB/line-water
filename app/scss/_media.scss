@@ -651,6 +651,7 @@
     width: 435px;
     height: 264px;
   }
+
 }
 
 
@@ -698,6 +699,10 @@
     width: 165px;
     height: 115px;
   }
+    .capture__inner {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
 }
 
 @media(max-width: 600px) {

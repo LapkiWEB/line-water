@@ -121,40 +121,57 @@ $(function () {
 })
 
 
-window.addEventListener('DOMContentLoaded', function () {
+// window.addEventListener('DOMContentLoaded', function () {
 
 
 
-  const modalTrigger = document.querySelectorAll('[data-modal]'),
-    modal = document.querySelector('.modal'),
-    modalCloseBtn = document.querySelector('[data-close]');
+const modalTrigger = document.querySelectorAll('[data-modal]'),
+  modal = document.querySelector('.modal'),
+  modalCloseBtn = document.querySelector('[data-close]');
 
-  modalTrigger.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modal.classList.add('show');
-      modal.classList.remove('hide');
-      document.body.style.overflow = 'hidden';
-    });
+modalTrigger.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.classList.add('show');
+    modal.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
   });
+});
 
-  function clossModel() {
-    modal.classList.add('hide');
-    modal.classList.remove('show');
-    document.body.style.overflow = '';
+function clossModel() {
+  modal.classList.add('hide');
+  modal.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+modalCloseBtn.addEventListener('click', clossModel);
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    clossModel();
   }
+});
 
-  modalCloseBtn.addEventListener('click', clossModel);
+document.addEventListener('keydown', (e) => {
+  if (e.code === "Escape" && modal.classList.contains('show')) {
+    clossModel();
+  }
+});
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      clossModel();
-    }
+// });
+
+
+$(function () {
+  const block = document.getElementById('leave');
+  $(block).on('click', function () {
+    block.classList.remove('show');
+ 
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.code === "Escape" && modal.classList.contains('show')) {
-      clossModel();
-    }
-  });
+  setTimeout(function () {
+    $(document).mouseleave(function (e) {
+      block.classList.add('show');
+ 
+    });
+  }, 10000);
 
 });

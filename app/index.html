@@ -1324,9 +1324,10 @@
         </div>
       </div>
 
-      <div class="capture">
+      <div class="capture" id="leave">
         <div class="capture__inner">
-          <ul data-close class="capture__btn">
+          <ul class="capture__btn"
+            onclick="document.getElementById('leave').style.display='none'; return false;">
             <li class="capture__line close__line1"></li>
             <li class="capture__line close__line2"></li>
           </ul>
