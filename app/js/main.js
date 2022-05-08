@@ -190,6 +190,6 @@ $(function () {
       block.classList.add('show');
  
     });
-  }, 12000);
+  }, 15000);
 
 });
