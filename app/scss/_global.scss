@@ -10,18 +10,21 @@ body {
   margin: 0 auto;
   background-color: $black;
 }
-::-webkit-scrollbar{
-  width: 12px;
+
+::-webkit-scrollbar {
+  width: 8px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background-color: $black;
-    border-radius: 8px;
-    position: relative;
+
+  position: relative;
 }
-::-webkit-scrollbar-thumb{
-  background-color: $neon-blue;
-  border-radius: 8px;
-  border: 3px solid $black;
+
+::-webkit-scrollbar-thumb {
+  background-color: $black;
+  border-radius: 5px;
+  border: 1px solid $neon-blue;
 }
 
 .wrapper {
@@ -198,6 +201,9 @@ body {
 
 // ЛОГОТИП
 // ВЫЕЗЖАЮЩЕЕ МЕНЮ
+.global__social{
+  height: 43px;
+}
 .global__social-list {
   display: inline-block;
 
@@ -219,6 +225,11 @@ body {
   z-index: 100;
 
   &.active {
+    .row {
+      height: 2px;
+      width: 25px;
+    }
+
     .row1 {
       transform: rotate(45deg);
       position: relative;
@@ -230,7 +241,7 @@ body {
     .row2 {
       transform: rotate(-45deg);
       position: relative;
-      top: -3px;
+      top: -2px;
       background-color: $white;
       transition: all .5s ease 0s;
     }
@@ -267,9 +278,9 @@ body {
     top: 0px;
     right: 0;
     bottom: 0;
-    width: 880px;
+    width: 720px;
     height: 100vh;
-    padding: 50px 0 50px 50px;
+    padding: 50px 0 0px 50px;
     font-size: 18px;
     line-height: 22px;
     background: rgba(1, 23, 32, 0.9);
@@ -293,7 +304,7 @@ body {
 }
 
 .menu__mobil-box {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .menu-mobil-services {
@@ -540,62 +551,6 @@ body {
   top: -3px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.capture__btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.capture__line {
-  width: 30px;
-  background-color: $white;
-  height: 3px;
-  border-radius: 5px;
-  display: block;
-  margin-bottom: 6px;
-  position: relative;
-}
-
-.capture__line1 {
-  transform: rotate(45deg);
-  top: 6px;
-}
-
-.capture__line2 {
-  transform: rotate(-45deg);
-  top: -3px;
-}
-
-
-
-.capture {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(1, 23, 32, 0.9);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  display: none;
-
-}
 .show {
   display: block;
   display: flex;
@@ -604,23 +559,4 @@ body {
 
 .hide {
   display: none;
-}
-
-.capture__inner {
-  border: 3px solid $neon-blue;
-  position: relative;
-  max-width: 636px;
-  width: 100%;
-  padding: 60px 30px 40px;
-  text-align: center;
-  background: rgba(0, 32, 46, 0.8);
-  margin: 0 auto;
-}
-.capture__text {
-  margin-bottom: 50px;
-}
-.capture__item {
-  max-width: 300px !important;
-  width: 100%;
-  margin: 0 auto;
 }
