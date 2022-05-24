@@ -245,16 +245,44 @@ body {
 }
 
 .title {
+  padding: 0 10px;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
   margin-bottom: 50px;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.start__title {
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.devscreen__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.devscreen__subtitle {
+  padding-top: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 
 .subtitle {
@@ -551,11 +579,11 @@ body {
   list-style: none;
 }
 .slick-dots button {
-  background-color: #F1FCFF;
-  border: none;
+  background-color: transparent;
+  border: 2px solid #787878;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 18px;
+  width: 18px;
   margin: 20px;
   font-size: 0;
   margin-bottom: 0;
@@ -563,7 +591,8 @@ body {
 }
 
 .slick-dots li[class=slick-active] button {
-  background-color: #00E0FF;
+  background-color: transparent;
+  border: 2px solid #00E0FF;
 }
 
 .breadcrumbs {
@@ -624,22 +653,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 130px;
-}
-
-.devscreen__title,
-.start__title {
-  text-transform: uppercase;
-  font-size: 48px;
-  line-height: 50px;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-}
-
-.devscreen__subtitle {
-  padding-top: 15px;
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: 2px;
 }
 
 .devscreen__text {
@@ -1270,7 +1283,6 @@ body {
 .reviews__info-text {
   margin-bottom: 50px;
   height: 185px;
-  overflow-y: auto;
   padding-right: 5px;
 }
 
@@ -1642,10 +1654,10 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
   padding-left: 30px;
 }
 
@@ -1655,6 +1667,7 @@ body {
   line-height: 26px;
   color: #00E0FF;
   letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 .water {
@@ -2347,12 +2360,15 @@ body {
     display: none;
   }
 
+  .start__title {
+    font-size: 36px;
+  }
+
   .screen__title,
-.devscreen__title,
-.start__title {
+.devscreen__title {
     font-size: 48px;
     line-height: 55px;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
   }
 
   .screen__subtitle,
@@ -2360,7 +2376,7 @@ body {
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
-    letter-spacing: 0;
+    letter-spacing: 2px;
   }
 
   .company__item-title {
@@ -2432,7 +2448,7 @@ body {
   }
 
   .devscreen {
-    height: 750px;
+    height: 700px;
   }
 
   .work__box {
@@ -2784,6 +2800,10 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .reviews__info-text {
+    height: auto;
+  }
+
   .product2-img {
     max-width: 165px;
     height: 115px;
@@ -2800,8 +2820,7 @@ body {
   }
 
   .screen__title,
-.devscreen__title,
-.start__title {
+.devscreen__title {
     font-size: 36px;
     line-height: 40px;
   }
@@ -2825,6 +2844,14 @@ body {
 
   .projects__item {
     height: 350px;
+  }
+  .projects__item .global-bg {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00202E), color-stop(42.19%, rgba(0, 32, 46, 0)));
+    background: -o-linear-gradient(top, #00202E 0%, rgba(0, 32, 46, 0) 42.19%);
+    background: linear-gradient(180deg, #00202E 0%, rgba(0, 32, 46, 0) 42.19%);
+    border-top: 1px solid #00202e;
+    border-radius: 0px;
   }
 
   .projects__text-more,
@@ -2918,7 +2945,8 @@ body {
   }
 
   .reviews__img {
-    display: none;
+    max-width: 314px;
+    height: 217px;
   }
 
   .feedback__btn {
@@ -3102,6 +3130,13 @@ body {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
+  }
+
+  .devscreen__title,
+.start__title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
   }
 
   .header__btn {

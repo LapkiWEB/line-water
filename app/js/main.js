@@ -19,16 +19,15 @@ $(function () {
     prevArrow: document.querySelector('.slick-prev'),
     nextArrow: document.querySelector('.slick-next'),
     infinite: true,
-    speed: 1000,
+    speed: 900,
     fade: true,
-    cssEase: 'linear',
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 10000,
     responsive: [{
       breakpoint: 500,
       settings: {
+        fade: false,
+          speed: 200,
         dots: true,
         arrows: false,
       }

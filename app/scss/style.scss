@@ -290,6 +290,7 @@
   overflow: hidden;
   background-size: 100% 100%;
 
+
   &:hover {
     background-size: 110% 110%;
 
@@ -518,7 +519,7 @@
 .reviews__info-text {
   margin-bottom: 50px;
   height: 185px;
-  overflow-y: auto;
+  // overflow-y: auto;
   padding-right: 5px;
 }
 
@@ -847,7 +848,6 @@
 
 .about__item {
   width: 540px;
-  // padding-right: 20px;
   margin-right: 50px;
   margin-bottom: 50px;
 }
@@ -867,8 +867,8 @@
 .about__box-wrapper {
   display: flex;
   justify-content: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
-  align-content: space-between;
   padding-left: 30px;
 }
 
@@ -879,6 +879,7 @@
   line-height: 26px;
   color: $neon-blue;
   letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 

@@ -256,12 +256,15 @@
     display: none;
   }
 
-  .screen__title,
-  .devscreen__title,
   .start__title {
+    font-size: 36px;
+  }
+
+  .screen__title,
+  .devscreen__title {
     font-size: 48px;
     line-height: 55px;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
   }
 
   .screen__subtitle,
@@ -269,7 +272,7 @@
     font-size: 24px;
     line-height: 26px;
     padding-top: 10px;
-    letter-spacing: 0;
+    letter-spacing: 2px;
   }
 
   .company__item-title {
@@ -338,7 +341,7 @@
   }
 
   .devscreen {
-    height: 750px;
+    height: 700px;
   }
 
   .work__box {
@@ -460,6 +463,7 @@
   .menu.active {
     padding-top: 50px;
   }
+
   .menu__mobil-list {
     margin-bottom: 25px;
   }
@@ -572,18 +576,18 @@
     width: 320px;
   }
 
-   .footer__item-contacts {
-     display: flex;
-     flex-wrap: wrap;
-     max-width: 463px;
-        margin-bottom: 0;
-   }
+  .footer__item-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 463px;
+    margin-bottom: 0;
+  }
 
-   .footer__btn-wrapper {
-     width: 156px;
-     margin-left: auto;
-     display: block;
-   }
+  .footer__btn-wrapper {
+    width: 156px;
+    margin-left: auto;
+    display: block;
+  }
 
   .footer__menu-mobil {
     margin-left: 15px;
@@ -660,7 +664,7 @@
   .menu__wrapper {
     justify-content: center;
     align-items: flex-end;
- 
+
   }
 
   .menu__mobil-btn {
@@ -682,6 +686,11 @@
 
 // ВЕРТИКАЛЬ ВВЕРХ!!!
 @media(max-width: 650px) {
+  .reviews__info-text {
+    height: auto;
+
+  }
+
   .product2-img {
     max-width: 165px;
     height: 115px;
@@ -703,8 +712,7 @@
   }
 
   .screen__title,
-  .devscreen__title,
-  .start__title {
+  .devscreen__title{
     font-size: 36px;
     line-height: 40px;
 
@@ -729,6 +737,13 @@
 
   .projects__item {
     height: 350px;
+
+    .global-bg {
+      position: absolute;
+      background: linear-gradient(180deg, #00202E 0%, rgba(0, 32, 46, 0) 42.19%);
+      border-top: 1px solid rgba(0, 32, 46, 1);
+      border-radius: 0px;
+    }
   }
 
   .projects__text-more,
@@ -821,7 +836,8 @@
   }
 
   .reviews__img {
-    display: none;
+    max-width: 314px;
+    height: 217px;
   }
 
   .feedback__btn {
@@ -1021,6 +1037,12 @@
     line-height: 36px;
     margin-bottom: 30px;
   }
+   .devscreen__title,
+   .start__title {
+     font-size: 26px;
+     line-height: 30px;
+     letter-spacing: 1px;
+   }
 
   .header__btn {
     display: block;
