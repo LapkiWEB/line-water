@@ -798,6 +798,10 @@
   .footer__down {
     justify-content: flex-start;
   }
+  .reviews__img {
+    max-width: 314px;
+    height: 217px;
+  }
 }
 
 @media(max-width: 500px) {
@@ -833,11 +837,6 @@
   .reviews__item-wrapper {
     padding: 15px 20px;
     margin-bottom: 20px;
-  }
-
-  .reviews__img {
-    max-width: 314px;
-    height: 217px;
   }
 
   .feedback__btn {
