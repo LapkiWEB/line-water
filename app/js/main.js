@@ -27,7 +27,7 @@ $(function () {
       breakpoint: 500,
       settings: {
         fade: false,
-          speed: 200,
+        speed: 200,
         dots: true,
         arrows: false,
       }
@@ -50,35 +50,33 @@ $(function () {
   $('.slider-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
+    prevArrow: document.querySelector('.slick-prev'),
+    nextArrow: document.querySelector('.slick-next'),
     asNavFor: '.slider-for',
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     centerMode: true,
     focusOnSelect: true,
-    centerPadding: '60px',
+    centerPadding: '0px',
     responsive: [{
-        breakpoint: 1601,
+        breakpoint: 1441,
         settings: {
           slidesToShow: 4,
         }
       },
       {
-        breakpoint: 1321,
+        breakpoint: 1168,
         settings: {
           slidesToShow: 3,
         }
       },
+
       {
-        breakpoint: 1031,
+        breakpoint: 501,
         settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 521,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: '20px',
+           slidesToShow: 3,
+          dots: true,
+          arrows: false,
         }
       },
     ]
@@ -99,14 +97,14 @@ $(function () {
         breakpoint: 1301,
         settings: {
           slidesToShow: 3,
-         centerMode: false,
+          centerMode: false,
         }
       },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-         centerMode: false,
+          centerMode: false,
         }
       },
       {
@@ -116,15 +114,15 @@ $(function () {
           centerMode: false,
         }
       },
-        {
-          breakpoint: 501,
-          settings: {
-            slidesToShow: 1,
-            centerMode: false,
-            arrows: false,
-            dots: true,
-          }
-        },
+      {
+        breakpoint: 501,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: false,
+          dots: true,
+        }
+      },
     ]
 
   });
@@ -172,6 +170,3 @@ document.addEventListener('keydown', (e) => {
 });
 
 // });
-
-
-

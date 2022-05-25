@@ -1112,17 +1112,17 @@
 .product__wrapper {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .slider-for {
-  max-width: 860px;
+  max-width: 700px;
   width: 100%;
 }
 
 .product1-img {
-  width: 860px;
-  height: 600px;
+  width: 700px;
+  height: 490px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1130,6 +1130,7 @@
 }
 
 .product__box {
+  // width: 810px;
   margin-left: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -1142,14 +1143,16 @@
 
 .product__inner {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 .product__inners {
-
+  font-size: 16px;
+  line-height: 18px;
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -1160,7 +1163,7 @@
     content: '';
     left: 0;
     right: 0;
-    top: 22px;
+    top: 18px;
     border-bottom: 1px dashed rgba(0, 224, 255, 0.5);
     ;
   }
@@ -1179,40 +1182,55 @@
   width: 100%;
   text-align: right;
 }
+.slider-nav__wrapper{
+  position: relative;
+   margin-bottom: 30px;
+   padding: 0 25px;
+   .slick-prev {
+     position: absolute;
+     top: 50%;
+     transform: translate(0, -50%);
+     left: -15px;
+     z-index: 1;
+   }
 
-.slider-nav {
-  margin-bottom: 50px;
+   .slick-next {
+     position: absolute;
+     top: 50%;
+     transform: translate(0, -50%);
+     right: -15px;
+   }
 }
 
-
 .product2-img {
-  padding-top: 20px;
-  max-width: 265px;
-  height: 185px;
+  max-width: 245px;
+  height: 170px;
   margin: 0 auto;
   border-radius: 3px;
 }
 
-
-
-
-.product2.slick-slide.slick-current.slick-active.slick-center {
-  padding-top: 0;
-
-  .product2-wrapper {
-    max-width: 276px;
-    padding: 5px 5px 5px 5px;
-    border: 1px solid $neon-blue;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 3px;
-  }
-
-  .product2-img {
-    padding-top: 0;
-    margin: 0 auto;
-  }
+.product__btn{
+  margin-left: 30px;
 }
+
+
+// .product2.slick-slide.slick-current.slick-active.slick-center {
+//   padding-top: 0;
+
+//   .product2-wrapper {
+//     max-width: 276px;
+//     padding: 5px 5px 5px 5px;
+//     border: 1px solid $neon-blue;
+//     height: auto;
+//     margin: 0 auto;
+//     border-radius: 3px;
+//   }
+
+//   .product2-img {
+//     padding-top: 0;
+//     margin: 0 auto;
+//   }
+// }
 
 // end section product
 
