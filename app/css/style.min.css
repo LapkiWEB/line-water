@@ -1858,6 +1858,7 @@ body {
 .news__img {
   width: 577px;
   height: 350px;
+  border-radius: 5px;
 }
 
 .news__info {
@@ -2018,28 +2019,24 @@ body {
   padding-top: 0;
 }
 
-.article__wrapper {
+.article__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 50px;
 }
 
 .article__info {
   margin-left: 75px;
 }
 
-.article__up-img {
+.article__img {
   width: 577px;
   height: 350px;
   margin-bottom: 50px;
-}
-
-.article__date {
-  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 .article__text {
@@ -2052,81 +2049,32 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
+  margin-bottom: 50px;
 }
 .article__link:hover {
   border-bottom: 1px solid #00E0FF;
+}
+
+.article__box {
+  max-width: 680px;
+  width: 100%;
+  margin-left: 652px;
+}
+
+.article__inner-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article__btn {
+  margin-left: 30px;
 }
 
 .article__down-link {
   padding-top: 30px;
 }
 
-.article__inner {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.article__item {
-  width: 382px;
-  height: 287px;
-  margin-top: 40px;
-}
-
-.article__item__text {
-  display: none;
-  text-align: center;
-}
-
-.article__img {
-  width: 382px;
-  height: 287px;
-  margin: 0 auto;
-  border-radius: 3px;
-}
-
-.article__item.slick-slide.slick-current.slick-active.slick-center {
-  max-width: 508px;
-  height: 460px;
-  margin-top: 0;
-}
-.article__item.slick-slide.slick-current.slick-active.slick-center .article__inners {
-  max-width: 496px;
-  height: 376px;
-  padding: 5px;
-  border: 1px solid #00E0FF;
-  margin: 0 auto;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-.article__item.slick-slide.slick-current.slick-active.slick-center .article__img {
-  max-width: 484px;
-  width: 100%;
-  height: 364px;
-  border-radius: 3px;
-}
-.article__item.slick-slide.slick-current.slick-active.slick-center .article__item__text {
-  display: block;
-  margin: 0 auto;
-}
-
-@media (max-width: 1600px) {
-  .article__img {
-    width: 290px;
-    height: 218px;
-  }
-
-  .article__item.slick-slide.slick-current.slick-active.slick-center {
-    max-width: 508px;
-    height: 380px;
-  }
-  .article__item.slick-slide.slick-current.slick-active.slick-center .article__inners {
-    max-width: 410px;
-    height: 310px;
-  }
-  .article__item.slick-slide.slick-current.slick-active.slick-center .article__img {
-    height: 300px;
-  }
-}
 @media (max-width: 1450px) {
   .spec__text,
 .projects__text {
@@ -2182,18 +2130,28 @@ body {
     width: 502px !important;
   }
 
-  .article__wrapper {
+  .article__item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
-  .article__up-img {
+  .article__img {
     margin: 0 auto;
     margin-bottom: 30px;
   }
 
   .article__info {
     margin-left: 0;
+  }
+
+  .article__box {
+    margin: 0 auto;
+  }
+
+  .article__inner-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 1300px) {
@@ -2217,22 +2175,6 @@ body {
             justify-content: space-between;
     width: 365px;
     margin-left: 30px;
-  }
-
-  .article__item__text {
-    display: block;
-    max-width: 290px;
-    margin: 0 auto;
-    padding-top: 15px;
-  }
-
-  .article__item {
-    margin-top: 0;
-  }
-
-  .article__inners {
-    max-width: 290px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 1200px) {
@@ -2794,7 +2736,7 @@ body {
     padding: 45px;
   }
 
-  .article__up-img {
+  .article__img {
     width: 435px;
     height: 264px;
   }
@@ -3110,14 +3052,9 @@ body {
     padding-top: 20px;
   }
 
-  .article__up-img {
+  .article__img {
     width: 300px;
     height: 201px;
-  }
-
-  .article__inner .slick-dots {
-    padding-top: 20px;
-    margin-bottom: 30px;
   }
 
   .slider-nav__wrapper {
@@ -3187,15 +3124,6 @@ body {
     margin-left: 0;
   }
 
-  .article__item {
-    height: 260px;
-  }
-
-  .article__img {
-    width: 250px;
-    height: 218px;
-  }
-
   .product2-img {
     max-width: 100px;
     height: 70px;
@@ -3214,6 +3142,16 @@ body {
   }
 
   .product__btn {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .article__inner-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .article__btn {
     margin-left: 0;
     margin-top: 30px;
   }
