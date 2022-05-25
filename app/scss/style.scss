@@ -28,6 +28,7 @@
 .header__line {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .header__contacts {
@@ -38,7 +39,6 @@
 
 .header__social {
   margin-right: 30px;
-  //  height: 43px;
 }
 
 .header__btn {
@@ -52,6 +52,7 @@
 
 .header__phone {
   margin-right: 40px;
+ margin-left: 6px;
 }
 
 // end header
