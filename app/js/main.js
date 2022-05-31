@@ -10,9 +10,12 @@ $(function () {
   }));
 
 
-  $('.questions__item-title').on('click', (function () {
-    $(this).next('.questions__item-text').slideToggle();
-  }));
+ 
+ $('.questions__item').on('click', (function () {
+   $(this).find('.questions__item-text').show(500);
+   $(this).siblings().find('.questions__item-text').hide(500);
+
+ }));
 
 
   $('.reviews__slider__inner').slick({
