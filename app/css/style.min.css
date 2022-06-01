@@ -2904,6 +2904,10 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .header {
+    padding: 6px 0;
+  }
+
   .header__phone {
     display: none;
   }
@@ -2965,6 +2969,7 @@ body {
 
   .menu__mobil-box {
     width: 310px;
+    margin-bottom: 100px;
   }
 
   .footer__item-contacts {
