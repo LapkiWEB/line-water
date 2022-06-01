@@ -2904,8 +2904,17 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .logo {
+    width: 105px;
+    height: 40px;
+  }
+  .logo img {
+    width: 105px;
+    height: 40px;
+  }
+
   .header {
-    padding: 6px 0;
+    padding: 12px 0;
   }
 
   .header__phone {
